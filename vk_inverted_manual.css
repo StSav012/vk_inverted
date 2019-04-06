@@ -134,6 +134,14 @@ input.text.ts_input:focus {
     filter: invert(100%);
 }
 
+.summary_tab_sel .summary_tab_x {
+    filter: invert(100%) opacity(45%);
+}
+
+.summary_tab_sel .summary_tab_x:hover {
+    filter: invert(100%);
+}
+
 .video_thumb_label._has_play_icon::before {
     filter: invert(100%);
 }
