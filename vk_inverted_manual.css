@@ -82,7 +82,7 @@ input.text.ts_input:focus {
     filter: invert(100%);
 }
 
-.im_stickers_close::after, .chat_tab_close::after, .chat_tab_close:hover::after, .notifier_close_wrap:before {
+.im_stickers_close::after, .chat_tab_close::after, .chat_tab_close:hover::after {
     filter: invert(100%);
 }
 
