@@ -128,23 +128,23 @@ input.text.ts_input:focus {
 }
 
 .box_x_button, .feed_blog_reminder_large_close {
-    filter: invert(100%) opacity(75%);
+    filter: invert(100%) hue-rotate(180deg) opacity(75%);
 }
 
 .box_x_button:hover, .feed_blog_reminder_large_close:hover {
-    filter: invert(100%);
+    filter: invert(100%) hue-rotate(180deg);
 }
 
 .summary_tab_sel .summary_tab_x {
-    filter: invert(100%) opacity(45%);
+    filter: invert(100%) hue-rotate(180deg) opacity(45%);
 }
 
 .summary_tab_sel .summary_tab_x:hover {
-    filter: invert(100%);
+    filter: invert(100%) hue-rotate(180deg);
 }
 
 .video_thumb_label._has_play_icon::before {
-    filter: invert(100%);
+    filter: invert(100%) hue-rotate(180deg);
 }
 
 
