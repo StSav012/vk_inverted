@@ -49,6 +49,7 @@ FILES: List[str] = [
     'videoplayer',
     'videoview',
     'wide_dd',
+    'widget_post',
     'wk',
     'wk_editor',
     'wkview',
