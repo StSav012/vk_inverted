@@ -292,6 +292,12 @@ div.reply_text > div[id][style]:not([style=""]):not([style="display: block;"]):n
 }
 
 
+/* add a shadow for a graffiti to make the dark parts visible */
+.page_media_graffiti_doc > img {
+    filter: drop-shadow(0 0 0.75rem whitesmoke);
+}
+
+
 /* inverted loading indicator for embedded video */
 .page_post_video_play_inline .pr_bt {
     filter: invert(100%);
@@ -321,4 +327,17 @@ input.focused {
 /* message selection tick */
 .im-mess .im-mess--check {
     filter: invert(100%) hue-rotate(180deg);
+}
+
+
+/* docs viewer inline style */
+.docs_info {
+    color: #66696c;
+}
+
+.docs_panel {
+    background: #0e0e0e;
+    -webkit-box-shadow: 0px 2px 10px #ffffff26;
+    -moz-box-shadow: 0px 2px 10px #ffffff26;
+    box-shadow: 0px 2px 10px #ffffff26;
 }
