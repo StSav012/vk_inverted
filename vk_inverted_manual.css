@@ -62,7 +62,13 @@ input.text.ts_input:focus {
 
 
 /* text under a photo or a video */
-.pv_cont .pv_bottom_actions > .pv_actions_more, .pv_cont .pv_bottom_actions > a, .pv_cont .pv_bottom_actions > span, .pv_counter, .pv_album_name a, .mv_playlist .mv_playlist_header .mv_playlist_header_title, .mv_playlist .mv_playlist_item_title, .mv_playlist .mv_playlist_item_views {
+.pv_cont .pv_bottom_actions > .pv_actions_more,
+.pv_cont .pv_bottom_actions > a,
+.pv_cont .pv_bottom_actions > span,
+.pv_counter, .pv_album_name a,
+.mv_playlist .mv_playlist_header .mv_playlist_header_title,
+.mv_playlist .mv_playlist_item_title,
+.mv_playlist .mv_playlist_item_views {
     color: #ccc;
 }
 
@@ -86,10 +92,16 @@ input.text.ts_input:focus {
     filter: invert(100%);
 }
 
-.page_post_video_play_inline, .page_gif_play_icon, .video_module .video .page_video_play_icon {
+.page_post_video_play_inline,
+.page_gif_play_icon, .page_gif_progress_icon,
+.video_module .video .page_video_play_icon {
     background-color: #000;
     background-color: rgba(0, 0, 0, .5);
     filter: invert(100%);
+}
+
+.page_post_video_play_inline .pr_bt, .page_gif_progress_icon .pr_bt {
+	background: #000000;
 }
 
 .video_thumb_play {
@@ -164,7 +176,7 @@ img[src^="/images/dquestion_"][src$=".png"] {
 }
 
 
-/* “no avatar photo” image made dark */
+/* “no posts” image made dark */
 .no_posts_cover {
     filter: invert(100%) hue-rotate(180deg);
 }
@@ -301,12 +313,6 @@ div.reply_text > div[id][style]:not([style=""]):not([style="display: block;"]):n
 /* add a shadow for a graffiti to make the dark parts visible */
 .page_media_graffiti_doc > img {
     filter: drop-shadow(0 0 0.75rem whitesmoke);
-}
-
-
-/* inverted loading indicator for embedded video */
-.page_post_video_play_inline .pr_bt {
-    filter: invert(100%);
 }
 
 
