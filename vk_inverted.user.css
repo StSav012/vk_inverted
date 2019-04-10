@@ -2,7 +2,7 @@
 @name         Auto Dark VK
 @description  Mostly automatically created dark style for the desktop version of vk.com. Testing a new algorithm.
 @namespace    github.com/stsav012/vk_inverted
-@version      0.2.20190410114503
+@version      0.2.20190410124852
 @updateURL    https://github.com/StSav012/vk_inverted/raw/master/vk_inverted.user.css
 ==/UserStyle== */
 @-moz-document domain("vk.com") {
@@ -20853,7 +20853,7 @@ input.text.ts_input:focus {
     filter: invert(100%) hue-rotate(180deg);
 }
 
-.wall_post_source_icon {
+.wall_post_source_icon, .mob_onl {
     filter: invert(100%) hue-rotate(180deg);
 }
 
@@ -20867,6 +20867,12 @@ img[src^="/images/dquestion_"][src$=".png"] {
 
 .chat_tab_close {
     z-index: 1;
+}
+
+
+/* “no avatar photo” image made dark */
+.no_posts_cover {
+    filter: invert(100%) hue-rotate(180deg);
 }
 
 

@@ -147,7 +147,7 @@ input.text.ts_input:focus {
     filter: invert(100%) hue-rotate(180deg);
 }
 
-.wall_post_source_icon {
+.wall_post_source_icon, .mob_onl {
     filter: invert(100%) hue-rotate(180deg);
 }
 
@@ -161,6 +161,12 @@ img[src^="/images/dquestion_"][src$=".png"] {
 
 .chat_tab_close {
     z-index: 1;
+}
+
+
+/* “no avatar photo” image made dark */
+.no_posts_cover {
+    filter: invert(100%) hue-rotate(180deg);
 }
 
 

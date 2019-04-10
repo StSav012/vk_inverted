@@ -5,7 +5,7 @@ import urllib.request
 import urllib.error
 import os.path
 from css_color_inverter import invert
-from datetime import datetime
+import time
 import json
 import hashlib
 
@@ -81,7 +81,7 @@ out_lines: List[str] = [f'''\
 @name         Auto Dark VK
 @description  Mostly automatically created dark style for the desktop version of vk.com. Testing a new algorithm.
 @namespace    github.com/stsav012/vk_inverted
-@version      0.2.{datetime.now().strftime('%Y%m%d%H%M%S')}
+@version      0.2.{time.strftime('%Y%m%d%H%M%S')}
 @updateURL    https://github.com/StSav012/vk_inverted/raw/master/vk_inverted.user.css
 ==/UserStyle== */''']
 for fn in FILES:
