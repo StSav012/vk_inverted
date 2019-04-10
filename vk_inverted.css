@@ -22458,6 +22458,12 @@ input.focused {
     box-shadow: 0px 2px 10px #ffffff26;
 }
 
+
+/* hardcoded fill colors in svg */
+[fill="#FFF"], [fill="#fff"] {
+    fill: #000 !important;
+}
+
 }
 
 @-moz-document domain("m.vk.com") {
