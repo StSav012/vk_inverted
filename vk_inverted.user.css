@@ -2,7 +2,7 @@
 @name         Auto Dark VK
 @description  Mostly automatically created dark style for the desktop version of vk.com. Testing a new algorithm.
 @namespace    github.com/stsav012/vk_inverted
-@version      0.2.20190410151417
+@version      0.2.20190410151915
 @updateURL    https://github.com/StSav012/vk_inverted/raw/master/vk_inverted.user.css
 ==/UserStyle== */
 @-moz-document domain("vk.com") {
@@ -20806,8 +20806,12 @@ input.text.ts_input:focus {
     filter: invert(100%);
 }
 
+.page_gif_play_icon:hover, .page_gif_progress_icon:hover {
+	background-color: #00000099;
+}
+
 .page_post_video_play_inline .pr_bt, .page_gif_progress_icon .pr_bt {
-	background: #000000;
+	background: #fff;
 }
 
 .video_thumb_play {
