@@ -2,7 +2,7 @@
 @name         Auto Dark VK
 @description  Mostly automatically created dark style for the desktop version of vk.com. Testing a new algorithm.
 @namespace    github.com/stsav012/vk_inverted
-@version      0.2.20190411115105
+@version      0.2.20190411144914
 @updateURL    https://github.com/StSav012/vk_inverted/raw/master/vk_inverted.user.css
 ==/UserStyle== */
 @-moz-document domain("vk.com") {
@@ -19706,6 +19706,92 @@ input[type=range].step_slider:focus::-ms-fill-upper {
 
 .idd_popup .idd_item.idd_hl {
     background-color: #192129;
+}
+
+}
+
+@-moz-document domain("vk.com") {
+
+/* auto generated from ui_gallery.css */
+.h4-text {
+    color: #ffffff;
+}
+
+.ui_gallery .ui_gallery__arrow.ui_gallery__arrow_left {
+    background: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2242%22%20height%3D%2242%22%20viewBox%3D%220%200%2042%2042%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%3Cdefs%3E%3Cpath%20id%3D%22b%22%20d%3D%22M13%2C26%20C5.82029825%2C26%200%2C20.1797017%200%2C13%20C0%2C5.82029825%205.82029825%2C0%2013%2C0%20C20.1797017%2C0%2026%2C5.82029825%2026%2C13%20C26%2C20.1797017%2020.1797017%2C26%2013%2C26%20Z%20M10.7924847%2C16.793302%20C10.4021862%2C17.1840518%2010.4025521%2C17.8172167%2010.793302%2C18.2075153%20C11.1840518%2C18.5978138%2011.8172167%2C18.5974479%2012.2075153%2C18.206698%20L16.7075153%2C13.7014942%20C17.097814%2C13.3107441%2017.0974479%2C12.6775789%2016.7066976%2C12.2872804%20L12.2066976%2C7.79248425%20C11.8159474%2C7.40218596%2011.1827825%2C7.40255227%2010.7924843%2C7.79330242%20C10.402186%2C8.18405258%2010.4025523%2C8.81721746%2010.7933024%2C9.20751575%20L14.5857862%2C12.9956139%20L10.7924847%2C16.793302%20Z%22%2F%3E%3Cfilter%20id%3D%22a%22%20width%3D%22157.7%25%22%20height%3D%22157.7%25%22%20x%3D%22-28.8%25%22%20y%3D%22-25%25%22%20filterUnits%3D%22objectBoundingBox%22%3E%3CfeOffset%20dy%3D%221%22%20in%3D%22SourceAlpha%22%20result%3D%22shadowOffsetOuter1%22%2F%3E%3CfeGaussianBlur%20stdDeviation%3D%222%22%20in%3D%22shadowOffsetOuter1%22%20result%3D%22shadowBlurOuter1%22%2F%3E%3CfeColorMatrix%20values%3D%220%200%200%200%200%200%200%200%200%200.0784313725%200%200%200%200%200.2%200%200%200%200.24%200%22%20in%3D%22shadowBlurOuter1%22%20result%3D%22shadowMatrixOuter1%22%2F%3E%3CfeMorphology%20radius%3D%22.5%22%20operator%3D%22dilate%22%20in%3D%22SourceAlpha%22%20result%3D%22shadowSpreadOuter2%22%2F%3E%3CfeOffset%20in%3D%22shadowSpreadOuter2%22%20result%3D%22shadowOffsetOuter2%22%2F%3E%3CfeColorMatrix%20values%3D%220%200%200%200%200%200%200%200%200%200.0784313725%200%200%200%200%200.2%200%200%200%200.04%200%22%20in%3D%22shadowOffsetOuter2%22%20result%3D%22shadowMatrixOuter2%22%2F%3E%3CfeMerge%3E%3CfeMergeNode%20in%3D%22shadowMatrixOuter1%22%2F%3E%3CfeMergeNode%20in%3D%22shadowMatrixOuter2%22%2F%3E%3C%2FfeMerge%3E%3C%2Ffilter%3E%3C%2Fdefs%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%20transform%3D%22matrix%28-1%200%200%201%2034%208%29%22%3E%3Ccircle%20cx%3D%2213%22%20cy%3D%2213%22%20r%3D%2213%22%20fill%3D%22%23cce0fe%22%20opacity%3D%22.2%22%2F%3E%3Cuse%20fill%3D%22black%22%20filter%3D%22url%28%23a%29%22%20xlink%3Ahref%3D%22%23b%22%2F%3E%3Cuse%20fill%3D%22%23000000%22%20xlink%3Ahref%3D%22%23b%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") no-repeat 50%;
+}
+
+.ui_gallery .ui_gallery__arrow.ui_gallery__arrow_right {
+    background: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2242%22%20height%3D%2242%22%20viewBox%3D%220%200%2042%2042%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%3Cdefs%3E%3Cpath%20id%3D%22b%22%20d%3D%22M13%2C26%20C5.82029825%2C26%200%2C20.1797017%200%2C13%20C0%2C5.82029825%205.82029825%2C0%2013%2C0%20C20.1797017%2C0%2026%2C5.82029825%2026%2C13%20C26%2C20.1797017%2020.1797017%2C26%2013%2C26%20Z%20M10.7924847%2C16.793302%20C10.4021862%2C17.1840518%2010.4025521%2C17.8172167%2010.793302%2C18.2075153%20C11.1840518%2C18.5978138%2011.8172167%2C18.5974479%2012.2075153%2C18.206698%20L16.7075153%2C13.7014942%20C17.097814%2C13.3107441%2017.0974479%2C12.6775789%2016.7066976%2C12.2872804%20L12.2066976%2C7.79248425%20C11.8159474%2C7.40218596%2011.1827825%2C7.40255227%2010.7924843%2C7.79330242%20C10.402186%2C8.18405258%2010.4025523%2C8.81721746%2010.7933024%2C9.20751575%20L14.5857862%2C12.9956139%20L10.7924847%2C16.793302%20Z%22%2F%3E%3Cfilter%20id%3D%22a%22%20width%3D%22157.7%25%22%20height%3D%22157.7%25%22%20x%3D%22-28.8%25%22%20y%3D%22-25%25%22%20filterUnits%3D%22objectBoundingBox%22%3E%3CfeOffset%20dy%3D%221%22%20in%3D%22SourceAlpha%22%20result%3D%22shadowOffsetOuter1%22%2F%3E%3CfeGaussianBlur%20stdDeviation%3D%222%22%20in%3D%22shadowOffsetOuter1%22%20result%3D%22shadowBlurOuter1%22%2F%3E%3CfeColorMatrix%20values%3D%220%200%200%200%200%200%200%200%200%200.0784313725%200%200%200%200%200.2%200%200%200%200.24%200%22%20in%3D%22shadowBlurOuter1%22%20result%3D%22shadowMatrixOuter1%22%2F%3E%3CfeMorphology%20radius%3D%22.5%22%20operator%3D%22dilate%22%20in%3D%22SourceAlpha%22%20result%3D%22shadowSpreadOuter2%22%2F%3E%3CfeOffset%20in%3D%22shadowSpreadOuter2%22%20result%3D%22shadowOffsetOuter2%22%2F%3E%3CfeColorMatrix%20values%3D%220%200%200%200%200%200%200%200%200%200.0784313725%200%200%200%200%200.2%200%200%200%200.04%200%22%20in%3D%22shadowOffsetOuter2%22%20result%3D%22shadowMatrixOuter2%22%2F%3E%3CfeMerge%3E%3CfeMergeNode%20in%3D%22shadowMatrixOuter1%22%2F%3E%3CfeMergeNode%20in%3D%22shadowMatrixOuter2%22%2F%3E%3C%2FfeMerge%3E%3C%2Ffilter%3E%3C%2Fdefs%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%20transform%3D%22translate%288%208%29%22%3E%3Ccircle%20cx%3D%2213%22%20cy%3D%2213%22%20r%3D%2213%22%20fill%3D%22%23cce0fe%22%20opacity%3D%22.2%22%2F%3E%3Cuse%20fill%3D%22black%22%20filter%3D%22url%28%23a%29%22%20xlink%3Ahref%3D%22%23b%22%2F%3E%3Cuse%20fill%3D%22%23000000%22%20xlink%3Ahref%3D%22%23b%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") no-repeat 50%;
+}
+
+.ui_gallery.friends_recomm_gallery .wall_card__button:before {
+    background: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%2212%22%20viewBox%3D%220%200%2012%2012%22%3E%3Cpath%20fill%3D%22%23000000%22%20d%3D%22M7%205v-4.1c0-.5-.4-.9-1-.9s-1%20.4-1%20.9v4.1h-4.1c-.5%200-.9.4-.9%201s.4%201%20.9%201h4.1v4.1c0%20.5.4.9%201%20.9s1-.4%201-.9v-4.1h4.1c.5%200%20.9-.4.9-1s-.4-1-.9-1h-4.1z%22%2F%3E%3C%2Fsvg%3E") no-repeat 50% / cover;
+}
+
+.ui_gallery_wall_cards .wall_card {
+    box-shadow: 0 4px 4px 0 #ffffff0a, 0 1px 1px 0 #ffffff05;
+}
+
+.ui_gallery_wall_cards .wall_card__photo:before {
+    border: 1px solid #cce0fe1e;
+}
+
+.ui_gallery_wall_cards .wall_card__body {
+    border: 1px solid #cce0fe1e;
+}
+
+.ui_gallery_wall_cards .wall_card__title_link {
+    color: #dddddd;
+}
+
+.ui_gallery_wall_cards .wall_card__text {
+    color: #9a9a9a;
+}
+
+.ui_gallery_wall_cards .wall_card__close:before {
+    background-color: #ffffff;
+}
+
+.ui_gallery_wall_cards .wall_card__close:after {
+    background: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2210%22%20height%3D%2210%22%20viewBox%3D%220%200%2010%2010%22%3E%3Cpath%20fill%3D%22%23000000%22%20fill-rule%3D%22evenodd%22%20d%3D%22M5%203.691L8.422.27a.92.92%200%200%201%201.305.004.924.924%200%200%201%20.004%201.305L6.31%205%209.73%208.422a.92.92%200%200%201-.004%201.305.924.924%200%200%201-1.305.004L5%206.31%201.578%209.73a.92.92%200%200%201-1.305-.004.924.924%200%200%201-.004-1.305L3.69%205%20.27%201.578A.92.92%200%200%201%20.273.273.924.924%200%200%201%201.578.27L5%203.69z%22%2F%3E%3C%2Fsvg%3E") no-repeat 50% / 10px;
+}
+
+.ui_gallery_wall_cards .wall_card_text_special {
+    color: #326bad;
+}
+
+.ui_gallery_wall_cards .wall_card_promo .wall_card__button {
+    color: #4776ae;
+}
+
+.ui_gallery_squares .ui_gallery_square {
+    background: #0d1318 no-repeat 50% / cover;
+}
+
+.ui_gallery_squares .ui_gallery_square.ui_gallery_square_selected:before {
+    background-color: #ffffff;
+}
+
+.ui_gallery_squares .ui_gallery_square.ui_gallery_square_selected:after {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20width%3D%2224%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cpath%20d%3D%22m0%200h24v24h-24z%22%20opacity%3D%22.5%22%2F%3E%3Cpath%20d%3D%22m4%2015%204%204%2012-12%22%20stroke%3D%22%23000000%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%221.8%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+}
+
+.ui_gallery_squares .ui_gallery_square .ui_gallery_square_add_new_image_upld {
+    color: #8293aa;
+    background-color: #0d1318;
+}
+
+.ui_gallery_squares .ui_gallery_square .ui_gallery_square_add_new_image_upld:before {
+    background: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2272%22%20height%3D%2272%22%20viewBox%3D%220%200%2072%2072%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%20opacity%3D%22.7%22%3E%3Crect%20width%3D%2272%22%20height%3D%2272%22%20opacity%3D%22.4%22%2F%3E%3Cpath%20fill%3D%22%2344546c%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20d%3D%22M43%2C10%20C45.0694355%2C10%2046.3955046%2C11.1023749%2047.5840277%2C12.498735%20C47.6450425%2C12.5704195%2048.6471354%2C13.8165216%2049.7382098%2C15.1632748%20C50.8292841%2C16.5100281%2053.0511974%2C18%2055.0909091%2C18%20L56.4545455%2C18%20C63%2C18%2066%2C22%2066%2C28.6666667%20L66%2C49.3333333%20C66%2C55.2243707%2061.1158336%2C60%2055.0909091%2C60%20L36%2C60%20L16.9090909%2C60%20C10.8841664%2C60%206%2C55.2243707%206%2C49.3333333%20L6%2C28.6666667%20C6%2C22%209%2C18%2015.5454545%2C18%20L16.9090909%2C18%20C18.9488026%2C18%2021.1707159%2C16.5100281%2022.2617902%2C15.1632748%20C23.3528646%2C13.8165216%2024.3549575%2C12.5704195%2024.4159723%2C12.498735%20C25.6044954%2C11.1023749%2026.9305645%2C10%2029%2C10%20L43%2C10%20Z%20M21%2C37%20C21%2C45.28%2027.72%2C52%2036%2C52%20C44.28%2C52%2051%2C45.28%2051%2C37%20C51%2C28.72%2044.28%2C22%2036%2C22%20C27.72%2C22%2021%2C28.72%2021%2C37%20Z%20M26%2C37%20C26%2C31.4765625%2030.4765625%2C27%2036%2C27%20C41.5234375%2C27%2046%2C31.4765625%2046%2C37%20C46%2C42.5234375%2041.5234375%2C47%2036%2C47%20C30.4765625%2C47%2026%2C42.5234375%2026%2C37%20Z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E') no-repeat 50% / contain;
+}
+
+.ui_gallery_squares .ui_gallery_square .ui_gallery_square_add_new_image_load {
+    background-color: #bbbbbb;
+}
+
+.ui_gallery_squares .ui_gallery_square .ui_gallery_square_add_new_image_load:before {
+    background: url('data:image/svg+xml;charset=utf-8,%3Csvg%20width%3D%2228%22%20height%3D%2228%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M14%2025c6.075%200%2011-4.925%2011-11S20.075%203%2014%203%203%207.925%203%2014%22%20stroke%3D%22%23000000%22%20stroke-width%3D%223%22%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%3C%2Fsvg%3E') no-repeat 50% / contain;
 }
 
 }

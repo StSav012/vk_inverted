@@ -43,6 +43,7 @@ FILES: List[str] = [
     'tooltips',
     'ui_common',
     'ui_controls',
+    'ui_gallery',
     'ui_media_selector',
     'video',
     'videocat',
