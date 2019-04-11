@@ -101,11 +101,11 @@ input.text.ts_input:focus {
 }
 
 .page_gif_play_icon:hover, .page_gif_progress_icon:hover {
-	background-color: #00000099;
+    background-color: #00000099;
 }
 
 .page_post_video_play_inline .pr_bt, .page_gif_progress_icon .pr_bt {
-	background: #fff;
+    background: #fff;
 }
 
 .video_thumb_play {
@@ -159,11 +159,11 @@ input.text.ts_input:focus {
     filter: invert(100%) hue-rotate(180deg);
 }
 
-.video_thumb_label._has_play_icon::before {
+.wall_post_source_icon, .mob_onl {
     filter: invert(100%) hue-rotate(180deg);
 }
 
-.wall_post_source_icon, .mob_onl {
+.chat_onl::after {
     filter: invert(100%) hue-rotate(180deg);
 }
 
