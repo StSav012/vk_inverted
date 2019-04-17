@@ -125,8 +125,11 @@ input.text.ts_input:focus {
     filter: none;
 }
 
-.like_tt_share {
-    color: #fff;
+.like_tt_share::before {
+    filter: invert(100%) opacity(90%);
+}
+
+.like_tt_share:hover::before {
     filter: invert(100%);
 }
 
@@ -157,6 +160,14 @@ input.text.ts_input:focus {
 }
 
 .summary_tab_sel .summary_tab_x:hover {
+    filter: invert(100%) hue-rotate(180deg);
+}
+
+.page_pics_preview .page_media_x_wrap .page_media_x {
+    filter: invert(100%) hue-rotate(180deg) opacity(85%);
+}
+
+.page_pics_preview .page_media_x_wrap:hover .page_media_x {
     filter: invert(100%) hue-rotate(180deg);
 }
 

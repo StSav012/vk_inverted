@@ -2,7 +2,7 @@
 @name         Auto Dark VK
 @description  Mostly automatically created dark style for the desktop version of vk.com. Testing a new algorithm.
 @namespace    github.com/stsav012/vk_inverted
-@version      0.2.20190414230317
+@version      0.2.20190417095056
 @updateURL    https://github.com/StSav012/vk_inverted/raw/master/vk_inverted.user.css
 ==/UserStyle== */
 @-moz-document domain("vk.com") {
@@ -147,6 +147,10 @@
 
 .ui_tooltipMenu__link:hover {
     background: #0a0b0f;
+}
+
+.ui_tooltipMenu__link:hover .ui_tooltipMenu_title {
+    color: #79838f;
 }
 
 .ui_tooltipMenu__item_not_found {
@@ -2600,53 +2604,6 @@ img.emoji_css {
 
 .button_action_light_add.activated:before,.button_action_light_done:before {
     background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20width%3D%2224%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%20transform%3D%22%22%3E%3Cpath%20d%3D%22m0%200h24v24h-24z%22%2F%3E%3Cpath%20d%3D%22m4%2012.5%204.9999939%205%2011.5000061-11.5%22%20stroke%3D%22%23656d7d%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%221.8%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
-}
-
-.fifa_confettiLink {
-    color: #59bc59;
-}
-
-.fifa_confettiText__message {
-    color: #000000;
-    background-color: #e35707;
-    background-image: -o-linear-gradient(left, #e35707, #e35707);
-    background-image: linear-gradient(90deg, #e35707, #e35707);
-}
-
-@-o-keyframes fifa-blink {
-0%,to {
-    background-image: -o-linear-gradient(left, #9d7c05, #9d7c05);
-    background-image: linear-gradient(90deg, #9d7c05, #9d7c05);
-}
-
-
-}
-
-@keyframes fifa-blink {
-0%,to {
-    background-image: -o-linear-gradient(left, #9d7c05, #9d7c05);
-    background-image: linear-gradient(90deg, #9d7c05, #9d7c05);
-}
-
-
-}
-
-@-o-keyframes fifa-clear {
-0%,to {
-    background-image: -o-linear-gradient(left, #e35707, #e35707);
-    background-image: linear-gradient(90deg, #e35707, #e35707);
-}
-
-
-}
-
-@keyframes fifa-clear {
-0%,to {
-    background-image: -o-linear-gradient(left, #e35707, #e35707);
-    background-image: linear-gradient(90deg, #e35707, #e35707);
-}
-
-
 }
 
 .summary_wrap {
@@ -10686,6 +10643,10 @@ div.MessageForward__input {
 
 .market_app_cart_btn:after {
     background: url("data:image/svg+xml;charset=utf-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cpath%20d%3D%22M0%200h16v16H0z%22%2F%3E%3Cpath%20d%3D%22M9.75%203.997a1.75%201.75%200%200%200-3.5%200H5a3%203%200%200%201%206%200H9.75zM4.022%204h7.956c.538%200%20.734.053.933.154.199.101.357.25.47.443.113.193.178.385.21.922l.414%206.891A1.5%201.5%200%200%201%2012.507%2014H3.493a1.5%201.5%200%200%201-1.498-1.59l.414-6.89c.032-.538.097-.73.21-.923.113-.192.271-.342.47-.443.2-.1.395-.154.933-.154z%22%20fill%3D%22%23000000%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") 50% no-repeat;
+}
+
+th.sortable {
+    color: #79a7d5;
 }
 
 }
@@ -22318,8 +22279,11 @@ input.text.ts_input:focus {
     filter: none;
 }
 
-.like_tt_share {
-    color: #fff;
+.like_tt_share::before {
+    filter: invert(100%) opacity(90%);
+}
+
+.like_tt_share:hover::before {
     filter: invert(100%);
 }
 
@@ -22350,6 +22314,14 @@ input.text.ts_input:focus {
 }
 
 .summary_tab_sel .summary_tab_x:hover {
+    filter: invert(100%) hue-rotate(180deg);
+}
+
+.page_pics_preview .page_media_x_wrap .page_media_x {
+    filter: invert(100%) hue-rotate(180deg) opacity(85%);
+}
+
+.page_pics_preview .page_media_x_wrap:hover .page_media_x {
     filter: invert(100%) hue-rotate(180deg);
 }
 
