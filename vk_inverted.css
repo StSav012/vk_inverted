@@ -22339,6 +22339,12 @@ img[src^="/images/dquestion_"][src$=".png"] {
 }
 
 
+/* “no dialog photo” image made dark */
+.nim-dialog.nim-dialog_classic .nim-dialog--photo .nim-peer .nim-peer--photo > img {
+    filter: invert(100%) hue-rotate(180deg);
+}
+
+
 /* “no posts” image made dark */
 .no_posts_cover {
     filter: invert(100%) hue-rotate(180deg);
