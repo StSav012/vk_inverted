@@ -2,7 +2,7 @@
 @name         Auto Dark VK
 @description  Mostly automatically created dark style for the desktop version of vk.com. Testing a new algorithm.
 @namespace    github.com/stsav012/vk_inverted
-@version      0.2.20190417111308
+@version      0.2.20190417112443
 @updateURL    https://github.com/StSav012/vk_inverted/raw/master/vk_inverted.user.css
 ==/UserStyle== */
 @-moz-document domain("vk.com") {
@@ -22347,7 +22347,7 @@ img[src^="/images/dquestion_"][src$=".png"] {
 
 
 /* “no dialog photo” image made dark */
-.nim-dialog.nim-dialog_classic .nim-dialog--photo .nim-peer .nim-peer--photo > img {
+img[src="https://vk.com/images/icons/im_multichat_50.png"] {
     filter: invert(100%) hue-rotate(180deg);
 }
 

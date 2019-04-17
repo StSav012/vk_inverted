@@ -193,7 +193,7 @@ img[src^="/images/dquestion_"][src$=".png"] {
 
 
 /* “no dialog photo” image made dark */
-.nim-dialog.nim-dialog_classic .nim-dialog--photo .nim-peer .nim-peer--photo > img {
+img[src="https://vk.com/images/icons/im_multichat_50.png"] {
     filter: invert(100%) hue-rotate(180deg);
 }
 
