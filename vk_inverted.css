@@ -22989,7 +22989,7 @@ input.text.ts_input:focus {
 /* “no avatar photo” image made dark */
 img[src^="https://vk.com/images/camera_"][src$=".png?ava=1"],
 img[src^="https://vk.com/images/deactivated_"][src$=".png?ava=1"],
-img[src^="https://vk.com/images/dquestion_"][src$=".png"] {
+img[src^="https://vk.com/images/dquestion_"][src$=".png"],
 img[src^="/images/camera_"][src$=".png?ava=1"],
 img[src^="/images/deactivated_"][src$=".png?ava=1"],
 img[src^="/images/dquestion_"][src$=".png"] {
