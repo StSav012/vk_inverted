@@ -22992,7 +22992,8 @@ img[src^="https://vk.com/images/deactivated_"][src$=".png?ava=1"],
 img[src^="https://vk.com/images/dquestion_"][src$=".png"],
 img[src^="/images/camera_"][src$=".png?ava=1"],
 img[src^="/images/deactivated_"][src$=".png?ava=1"],
-img[src^="/images/dquestion_"][src$=".png"] {
+img[src^="/images/dquestion_"][src$=".png"],
+a[style="background-image: url('/images/camera_50.png?ava=1')"] {
     filter: invert(100%) hue-rotate(180deg);
 }
 
