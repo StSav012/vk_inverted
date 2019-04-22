@@ -2,7 +2,7 @@
 @name         Auto Dark VK
 @description  Mostly automatically created dark style for the desktop version of vk.com. Testing a new algorithm.
 @namespace    github.com/stsav012/vk_inverted
-@version      0.2.20190418182534
+@version      0.2.20190422142615
 @updateURL    https://github.com/StSav012/vk_inverted/raw/master/vk_inverted.user.css
 ==/UserStyle== */
 @-moz-document domain("vk.com") {
@@ -13768,7 +13768,11 @@ a.choose:hover {
 }
 
 .post_action_btn .post_action_btn_layout:after {
-    background: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%228%22%20height%3D%224%22%20viewBox%3D%22944%201152%208%204%22%3E%3Cpath%20d%3D%22M945.2%201152.2C944.9%201152%20944.5%201152%20944.3%201152.3%20944.1%201152.6%20944.1%201153%20944.4%201153.2L947.6%201155.8C947.8%201156%20948.2%201156%20948.4%201155.8L951.6%201153.2C951.9%201153%20951.9%201152.6%20951.7%201152.3%20951.5%201152%20951.1%201152%20950.8%201152.2L948%201154.5%20945.2%201152.2Z%22%20fill%3D%22%23656d7d%22%2F%3E%3C%2Fsvg%3E") no-repeat;
+    background: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%228%22%20height%3D%224%22%20viewBox%3D%22944%201152%208%204%22%3E%3Cpath%20d%3D%22M945.2%201152.2C944.9%201152%20944.5%201152%20944.3%201152.3%20944.1%201152.6%20944.1%201153%20944.4%201153.2L947.6%201155.8C947.8%201156%20948.2%201156%20948.4%201155.8L951.6%201153.2C951.9%201153%20951.9%201152.6%20951.7%201152.3%20951.5%201152%20951.1%201152%20950.8%201152.2L948%201154.5%20945.2%201152.2Z%22%20fill%3D%22%234e5c6d%22%2F%3E%3C%2Fsvg%3E') no-repeat 50%;
+}
+
+.post_action_btn .post_action_image_btn._close {
+    background: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%227%22%20height%3D%227%22%3E%3Cpath%20fill%3D%22%2379a7d5%22%20fill-rule%3D%22evenodd%22%20d%3D%22M3.5%202.584L5.896.188a.644.644%200%200%201%20.913.003.647.647%200%200%201%20.003.913L4.416%203.5l2.396%202.396a.644.644%200%200%201-.003.913.647.647%200%200%201-.913.003L3.5%204.416%201.104%206.812a.644.644%200%200%201-.913-.003.647.647%200%200%201-.003-.913L2.584%203.5.188%201.104A.644.644%200%200%201%20.191.191a.647.647%200%200%201%20.913-.003L3.5%202.584z%22%2F%3E%3C%2Fsvg%3E') no-repeat 50%;
 }
 
 .submit_post_box_bordered .post_field_wrap {
@@ -16523,10 +16527,6 @@ textarea.pe_textarea {
 
 .page_pics_preview .page_media_x_wrap {
     background: #dde0e299;
-}
-
-.media_preview_has_medias {
-    border-bottom: 1px solid #111316;
 }
 
 .Post__copyright {
@@ -23037,29 +23037,6 @@ img[src="https://vk.com/images/icons/im_multichat_50.png"] {
     background: rgba(0, 0, 0, .75);
 }
 
-.videoplayer_context_menu {
-    background: rgba(0, 0, 0, .9);
-}
-
-.videoplayer_context_menu ._item:hover {
-    background: rgba(66, 66, 66, .5);
-    color: #fff;
-}
-/*
-.videoplayer_end_actions ._add,
-.videoplayer_end_actions ._go,
-.videoplayer_end_actions ._like,
-.videoplayer_end_actions ._replay,
-.videoplayer_end_actions ._share {
-    background: rgba(0, 0, 0, .4);
-}
-
-.videoplayer_end_actions._large ._like,
-.videoplayer_end_actions._large ._share {
-    color: #fff;
-}
-*/
-
 .videoplayer_end_info_title,
 .videoplayer_end_info_author_link {
     color: #fff;
@@ -23075,6 +23052,12 @@ img[src="https://vk.com/images/icons/im_multichat_50.png"] {
 
 .videoplayer_slider ._handle {
 	background: #fff;
+}
+
+.videoplayer_settings_icon {
+	background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20height%3D%2224%22%20width%3D%2224%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3Cpath%20id%3D%22a%22%20d%3D%22M9.127%205.052c1.256-.72%201.473-1.469%201.623-2.219.167-.833.417-.833.833-.833h.834c.416%200%20.583%200%20.833.833.225.751.383%201.502%201.631%202.223%201.397.379%202.08.002%202.717-.422.707-.471.884-.294%201.178%200l.59.59c.294.294.412.412%200%201.178-.372.69-.791%201.333-.418%202.725.72%201.256%201.469%201.473%202.219%201.623.833.167.833.417.833.833v.834c0%20.416%200%20.583-.833.833-.751.225-1.502.383-2.223%201.631-.379%201.397-.002%202.08.422%202.717.471.707.294.884%200%201.178l-.59.59c-.294.294-.412.412-1.178%200-.69-.372-1.333-.791-2.725-.418-1.256.72-1.473%201.469-1.623%202.219-.167.833-.417.833-.833.833h-.834c-.416%200-.583%200-.833-.833-.225-.751-.383-1.502-1.631-2.223-1.397-.379-2.08-.002-2.717.422-.707.471-.884.294-1.178%200l-.59-.59c-.294-.294-.412-.412%200-1.178.372-.69.791-1.333.418-2.725-.72-1.256-1.469-1.473-2.219-1.623C2%2013.083%202%2012.833%202%2012.417v-.834c0-.416%200-.583.833-.833.751-.225%201.502-.383%202.223-1.631.379-1.397.002-2.08-.422-2.717-.471-.707-.294-.884%200-1.178l.59-.59c.294-.294.412-.412%201.178%200%20.69.372%201.333.791%202.725.418zM12%2016.75a4.75%204.75%200%201%200%200-9.5%204.75%204.75%200%200%200%200%209.5z%22%2F%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M0%200h24v24H0z%22%20opacity%3D%22.4%22%2F%3E%0A%20%20%20%20%3Cuse%20fill%3D%22%23fff%22%20xlink%3Ahref%3D%22%23a%22%2F%3E%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E');
+	width: 24px;
+	height: 24px;
 }
 
 .videoplayer_btn_settings_hd .videoplayer_settings_icon {
