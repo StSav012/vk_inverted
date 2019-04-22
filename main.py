@@ -12,6 +12,7 @@ import hashlib
 FILES: List[str] = [
     # 'aes_light',
     'apps',
+    'article',
     'article_editor',
     'audio',
     'bookmarks',
