@@ -24,10 +24,12 @@ FILES: List[str] = [
     'fonts_cnt',
     'groups',
     'im',
+    'login',
     'market',
     'module',
     'mrtarg',
     'notifier',
+    'oauth_popup',
     'page',
     'page_help',
     'photos',
@@ -39,6 +41,7 @@ FILES: List[str] = [
     'profile',
     'public',
     'reports',
+    'restore',
     'search',
     'settings',
     'stories',
@@ -98,6 +101,11 @@ for fn in FILES:
     if not os.path.exists(f'{fn}.css'):
         try:
             urllib.request.urlretrieve(f'https://vk.com/css/{fn}.css', f'{fn}.css')
+        except urllib.error.HTTPError:
+            pass
+    if not os.path.exists(f'{fn}.css'):
+        try:
+            urllib.request.urlretrieve(f'https://vk.com/css/api/{fn}.css', f'{fn}.css')
         except urllib.error.HTTPError:
             pass
     if not os.path.exists(f'{fn}.css'):
