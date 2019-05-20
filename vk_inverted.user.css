@@ -2,7 +2,7 @@
 @name         Auto Dark VK
 @description  Mostly automatically created dark style for the desktop version of vk.com. Testing a new algorithm.
 @namespace    github.com/stsav012/vk_inverted
-@version      0.2.20190520212502
+@version      0.2.20190520214731
 @updateURL    https://github.com/StSav012/vk_inverted/raw/master/vk_inverted.user.css
 ==/UserStyle== */
 @-moz-document domain("vk.com") {
@@ -27,7 +27,7 @@
 
 .media-video-play {
     background: #ffffff;
-    background: #ffffff7f url("/images/icons/video_play_small.png?1") 19px 13px no-repeat;
+    background: #ffffff7f url("https://vk.com/images/icons/video_play_small.png?1") 19px 13px no-repeat;
 }
 
 .media-video-play:hover {
@@ -166,7 +166,7 @@
 }
 
 .appAchievementsIllustration {
-    background: url('/images/apps/achievements/illustration.jpg') no-repeat 50% #060708;
+    background: url('https://vk.com/images/apps/achievements/illustration.jpg') no-repeat 50% #060708;
 }
 
 .appAchievementsHeader__title {
@@ -224,43 +224,43 @@
 }
 
 .appAchievementsNotice_1 {
-    background: url("/images/apps/achievements/level_1_bg.png") no-repeat 50% #8c6abc;
+    background: url("https://vk.com/images/apps/achievements/level_1_bg.png") no-repeat 50% #8c6abc;
 }
 
 .appAchievementsNotice_2 {
-    background: url("/images/apps/achievements/level_2_bg.png") no-repeat 50% #8c6abc;
+    background: url("https://vk.com/images/apps/achievements/level_2_bg.png") no-repeat 50% #8c6abc;
 }
 
 .appAchievementsNotice_3 {
-    background: url("/images/apps/achievements/level_3_bg.png") no-repeat 50% #8c6abc;
+    background: url("https://vk.com/images/apps/achievements/level_3_bg.png") no-repeat 50% #8c6abc;
 }
 
 .appAchievementsNotice_4 {
-    background: url("/images/apps/achievements/level_4_bg.png") no-repeat 50% #8c6abc;
+    background: url("https://vk.com/images/apps/achievements/level_4_bg.png") no-repeat 50% #8c6abc;
 }
 
 .appAchievementsNotice_5 {
-    background: url("/images/apps/achievements/level_5_bg.png") no-repeat 50% #8c6abc;
+    background: url("https://vk.com/images/apps/achievements/level_5_bg.png") no-repeat 50% #8c6abc;
 }
 
 .appAchievementsNotice_1.right {
-    background: url("/images/apps/achievements/level_1_right_bg.png") no-repeat 50% #8c6abc;
+    background: url("https://vk.com/images/apps/achievements/level_1_right_bg.png") no-repeat 50% #8c6abc;
 }
 
 .appAchievementsNotice_2.right {
-    background: url("/images/apps/achievements/level_2_right_bg.png") no-repeat 50% #8c6abc;
+    background: url("https://vk.com/images/apps/achievements/level_2_right_bg.png") no-repeat 50% #8c6abc;
 }
 
 .appAchievementsNotice_3.right {
-    background: url("/images/apps/achievements/level_3_right_bg.png") no-repeat 50% #8c6abc;
+    background: url("https://vk.com/images/apps/achievements/level_3_right_bg.png") no-repeat 50% #8c6abc;
 }
 
 .appAchievementsNotice_4.right {
-    background: url("/images/apps/achievements/level_4_right_bg.png") no-repeat 50% #8c6abc;
+    background: url("https://vk.com/images/apps/achievements/level_4_right_bg.png") no-repeat 50% #8c6abc;
 }
 
 .appAchievementsNotice_5.right {
-    background: url("/images/apps/achievements/level_5_right_bg.png") no-repeat 50% #8c6abc;
+    background: url("https://vk.com/images/apps/achievements/level_5_right_bg.png") no-repeat 50% #8c6abc;
 }
 
 .appAchievementsLeaderBoardItem__opened {
@@ -409,7 +409,7 @@
 .apps_featured_next:before,.apps_featured_prev:before {
     border: 2px solid #000000;
     background: #ffffff;
-    background: #ffffff7f url("/images/icons/apps_slider.png");
+    background: #ffffff7f url("https://vk.com/images/icons/apps_slider.png");
     box-shadow: 0 1px 6px 0 #ffffff3f, 0 0 2px 0 #ffffff26;
 }
 
@@ -497,7 +497,7 @@
 }
 
 .apps_cat_header_icon {
-    background: #36619b url("/images/icons/apps_catalog_icons.png") 0 -420px;
+    background: #36619b url("https://vk.com/images/icons/apps_catalog_icons.png") 0 -420px;
 }
 
 .apps_cat_header_icon.collection232 {
@@ -509,7 +509,7 @@
 }
 
 .apps_cat_row .app_delete_row {
-    background: #ffffff99 url("/images/delete.png") no-repeat scroll 3px 3px;
+    background: #ffffff99 url("https://vk.com/images/delete.png") no-repeat scroll 3px 3px;
 }
 
 .apps_frtt_box {
@@ -553,7 +553,7 @@
 }
 
 .apps_settings_icons .apps_settings_payments,.apps_settings_icons .apps_settings_stats {
-    background: #090e14 url("/images/icons/apps_admin_icons.png?1");
+    background: #090e14 url("https://vk.com/images/icons/apps_admin_icons.png?1");
 }
 
 .apps_settings_icons .apps_settings_payments:hover,.apps_settings_icons .apps_settings_stats:hover {
@@ -642,7 +642,7 @@
 }
 
 .apps_access_icon {
-    background: url("/images/icons/app_settings.png?1") #36619b;
+    background: url("https://vk.com/images/icons/app_settings.png?1") #36619b;
 }
 
 .apps_i_wrap {
@@ -724,7 +724,7 @@
 
 .apps_i_run_box {
     background: #ffffff;
-    background: #ffffffcc url("/images/inline_video_small_play.png") 100% no-repeat;
+    background: #ffffffcc url("https://vk.com/images/inline_video_small_play.png") 100% no-repeat;
     color: #000000;
 }
 
@@ -821,7 +821,7 @@
 }
 
 .app_search .s_search,.app_search .s_search_small,.apps_search_wrap .s_search {
-    background: #000000 url("/images/magglass.png") no-repeat 5px 6px;
+    background: #000000 url("https://vk.com/images/magglass.png") no-repeat 5px 6px;
 }
 
 .app_side_panel {
@@ -990,7 +990,7 @@ a.app_decline:hover {
 #apps .lists_header div {
     border-color: #426181 #5479a3 #577aa1;
     color: #000000;
-    background: #577aa1 url("/images/flydead.gif") no-repeat right -15px;
+    background: #577aa1 url("https://vk.com/images/flydead.gif") no-repeat right -15px;
 }
 
 #apps .lists_shad_l {
@@ -1074,7 +1074,7 @@ a.app_decline:hover {
 }
 
 #apps_input {
-    background: #000000 url('/images/magglass.png') no-repeat 5px 6px;
+    background: #000000 url('https://vk.com/images/magglass.png') no-repeat 5px 6px;
 }
 
 .apps_cat_section {
@@ -1494,7 +1494,7 @@ a.app_decline:hover {
 }
 
 .appsCollectionBanner {
-    background: url("/images/apps/banner/may.png") no-repeat 50% #530f9a;
+    background: url("https://vk.com/images/apps/banner/may.png") no-repeat 50% #530f9a;
     color: #000000;
 }
 
@@ -1556,7 +1556,7 @@ a.app_decline:hover {
 }
 
 .appCatalogNotice.market {
-    background: url("/images/apps/market/games_market.png") no-repeat 50% #ffffff;
+    background: url("https://vk.com/images/apps/market/games_market.png") no-repeat 50% #ffffff;
 }
 
 body.apps_vkpayMobileTransfer {
@@ -1587,7 +1587,7 @@ body.apps_vkpayMobileTransfer {
 
 .media-video-play {
     background: #ffffff;
-    background: #ffffff7f url("/images/icons/video_play_small.png?1") 19px 13px no-repeat;
+    background: #ffffff7f url("https://vk.com/images/icons/video_play_small.png?1") 19px 13px no-repeat;
 }
 
 .media-video-play:hover {
@@ -1722,7 +1722,7 @@ body.apps_vkpayMobileTransfer {
 
 .article figure[data-type="102"] .article_object_video_play {
     background: #ffffff;
-    background: #ffffff7f url("/images/icons/video_play_small.png?1") 19px 13px no-repeat;
+    background: #ffffff7f url("https://vk.com/images/icons/video_play_small.png?1") 19px 13px no-repeat;
 }
 
 .article figure[data-type="102"] .article_object_video_play:hover {
@@ -2376,7 +2376,7 @@ body.article_body.article_dark {
 
 .article figure[data-type="102"] .article_object_video_play {
     background: #ffffff;
-    background: #ffffff7f url("/images/icons/video_play_small.png?1") 19px 13px no-repeat;
+    background: #ffffff7f url("https://vk.com/images/icons/video_play_small.png?1") 19px 13px no-repeat;
 }
 
 .article figure[data-type="102"] .article_object_video_play:hover {
@@ -3762,7 +3762,7 @@ body.article_body.article_dark {
 
 .media-video-play {
     background: #ffffff;
-    background: #ffffff7f url("/images/icons/video_play_small.png?1") 19px 13px no-repeat;
+    background: #ffffff7f url("https://vk.com/images/icons/video_play_small.png?1") 19px 13px no-repeat;
 }
 
 .media-video-play:hover {
@@ -4001,7 +4001,7 @@ img.emoji_css {
 }
 
 .upload_progress {
-    background: #5b80a6 url("/images/progress_grad.gif") repeat;
+    background: #5b80a6 url("https://vk.com/images/progress_grad.gif") repeat;
     border: 1px solid #7193ba;
 }
 
@@ -4131,7 +4131,7 @@ img.emoji_css {
 }
 
 input.search {
-    background: #000000 url("/images/magglass.png") no-repeat 3px 4px;
+    background: #000000 url("https://vk.com/images/magglass.png") no-repeat 3px 4px;
 }
 
 input.disabled,textarea.disabled {
@@ -4617,7 +4617,7 @@ ul.listing li span {
 }
 
 .error {
-    background: #160600 url("/images/icons/msg_error.png?1") no-repeat 12px 12px;
+    background: #160600 url("https://vk.com/images/icons/msg_error.png?1") no-repeat 12px 12px;
 }
 
 .error.msg_appear,.error:empty {
@@ -4625,7 +4625,7 @@ ul.listing li span {
 }
 
 .info_msg {
-    background: #0a0b0f url("/images/icons/msg_info.png?1") no-repeat 12px 12px;
+    background: #0a0b0f url("https://vk.com/images/icons/msg_info.png?1") no-repeat 12px 12px;
     border-color: #252d3d;
 }
 
@@ -4634,7 +4634,7 @@ ul.listing li span {
 }
 
 .ok_msg {
-    background: #071205 url("/images/icons/msg_ok.png?1") no-repeat 12px 12px;
+    background: #071205 url("https://vk.com/images/icons/msg_ok.png?1") no-repeat 12px 12px;
     border-color: #31562a;
 }
 
@@ -4872,11 +4872,11 @@ div.top_result_baloon a {
 }
 
 .dropbox {
-    background: #000000 url("/images/dropbox_arrow.png") no-repeat 55px 11px;
+    background: #000000 url("https://vk.com/images/dropbox_arrow.png") no-repeat 55px 11px;
 }
 
 .dropbox.choose {
-    background: #000000 url("/images/dropbox_arrow.png") no-repeat 75px 31px;
+    background: #000000 url("https://vk.com/images/dropbox_arrow.png") no-repeat 75px 31px;
     border-bottom: 1px solid #171e25;
 }
 
@@ -4907,7 +4907,7 @@ div.top_result_baloon a {
 }
 
 input.text.ts_input {
-    background: #84addd url('/images/svg_icons/ic_head_loupe.svg') no-repeat;
+    background: #84addd url('https://vk.com/images/svg_icons/ic_head_loupe.svg') no-repeat;
     color: #121b26;
 }
 
@@ -5151,7 +5151,7 @@ em.ts_clist_hl {
 
 .video_thumb_play {
     background: #ffffff;
-    background: #ffffff7f url("/images/icons/video_play_small.png?1") 19px 13px no-repeat;
+    background: #ffffff7f url("https://vk.com/images/icons/video_play_small.png?1") 19px 13px no-repeat;
 }
 
 .video_thumb_play:hover {
@@ -6428,7 +6428,7 @@ em.ts_clist_hl {
 }
 
 .datepicker_text {
-    background: #000000 url("/images/icons/calendar.png?2") no-repeat;
+    background: #000000 url("https://vk.com/images/icons/calendar.png?2") no-repeat;
 }
 
 .datepicker_control.disabled,.datepicker_control.disabled .datepicker_text {
@@ -6536,7 +6536,7 @@ body.dev .priv_h_rows {
 }
 
 body.dev input.dev_top_input {
-    background: #84addd url('/images/svg_icons/ic_head_loupe.svg') no-repeat;
+    background: #84addd url('https://vk.com/images/svg_icons/ic_head_loupe.svg') no-repeat;
     color: #121b26;
 }
 
@@ -6945,7 +6945,7 @@ body.dev a.dev_platform_info {
 }
 
 #dev_section_menu {
-    background: #46678b url("/images/dev_dropdown_arrow.png?1") no-repeat 164px 4px;
+    background: #46678b url("https://vk.com/images/dev_dropdown_arrow.png?1") no-repeat 164px 4px;
     color: #000000;
 }
 
@@ -6970,7 +6970,7 @@ body.dev a.dev_platform_info {
 }
 
 .dev_section_dd .dd_menu_header div {
-    background: #46678b url("/images/dev_dropdown_arrow.png?1") no-repeat 162px 2px;
+    background: #46678b url("https://vk.com/images/dev_dropdown_arrow.png?1") no-repeat 162px 2px;
     border-color: #46678b;
 }
 
@@ -6980,7 +6980,7 @@ body.dev a.dev_platform_info {
 }
 
 input.dev_section_search {
-    background: #000000 url("/images/magglass.png") no-repeat 5px 7px;
+    background: #000000 url("https://vk.com/images/magglass.png") no-repeat 5px 7px;
 }
 
 #dev_search_suggest {
@@ -7307,7 +7307,7 @@ body.dev.dev_main_page input.dev_top_input {
 
 .docs_item_play {
     background: #ffffff;
-    background: #ffffff7f url("/images/icons/play_gif.png") 9px 7px no-repeat;
+    background: #ffffff7f url("https://vk.com/images/icons/play_gif.png") 9px 7px no-repeat;
 }
 
 .docs_item_play:hover {
@@ -7361,7 +7361,7 @@ a.docs_item_name {
 }
 
 .docs_office_365_notice {
-    background: #0d1317 url("/images/icons/docs_notice_office365_logo.png") no-repeat 11px 11px;
+    background: #0d1317 url("https://vk.com/images/icons/docs_notice_office365_logo.png") no-repeat 11px 11px;
 }
 
 .docs_office_365_notice_hide {
@@ -7369,7 +7369,7 @@ a.docs_item_name {
 }
 
 .eltt.feature_intro_tt.docs_office_365_tt {
-    background: #000000 url("/images/icons/docs_tooltip_office365_logo.png") no-repeat 16px 16px;
+    background: #000000 url("https://vk.com/images/icons/docs_tooltip_office365_logo.png") no-repeat 16px 16px;
 }
 
 }
@@ -7694,7 +7694,7 @@ a.docs_item_name {
 }
 
 #feed_recom_add {
-    background: #000000 url("/images/magglass.png") no-repeat 5px 6px;
+    background: #000000 url("https://vk.com/images/magglass.png") no-repeat 5px 6px;
 }
 
 .feed_recom_filter_txt {
@@ -8829,7 +8829,7 @@ a.artist_page_button,a.group_app_button_multi {
 }
 
 a.group_app_button:after {
-    background: #36619b url('/images/svg_icons/groups/arrow_ne.svg') no-repeat 50% calc(50% - 1px);
+    background: #36619b url('https://vk.com/images/svg_icons/groups/arrow_ne.svg') no-repeat 50% calc(50% - 1px);
 }
 
 a.artist_page_button .artist_page_button_icon {
@@ -11071,7 +11071,7 @@ div.MessageForward__input {
 
 .im-chat-placeholder {
     color: #4f5b6d;
-    background: #090b13 url("/images/icons/camera.png") no-repeat 50%;
+    background: #090b13 url("https://vk.com/images/icons/camera.png") no-repeat 50%;
 }
 
 .im-to-end {
@@ -11081,7 +11081,7 @@ div.MessageForward__input {
 .im-to-end .im-to-end--label {
     border: solid 1px #1e2830;
     box-shadow: 0 1px 3px 0 #ffffff19;
-    background: #000000 url("/images/icons/history_end.png") no-repeat 14px;
+    background: #000000 url("https://vk.com/images/icons/history_end.png") no-repeat 14px;
 }
 
 .im-to-end:hover .im-to-end--label {
@@ -11201,11 +11201,11 @@ div.MessageForward__input {
 }
 
 .im-aside-notice_vkadmin {
-    background: #000000 url("/images/vkadmin-promo/aside.png") 0 0 no-repeat;
+    background: #000000 url("https://vk.com/images/vkadmin-promo/aside.png") 0 0 no-repeat;
 }
 
 .im-aside-notice_messenger {
-    background: #000000 url("/images/messenger-promo/aside.png") 0 0 no-repeat;
+    background: #000000 url("https://vk.com/images/messenger-promo/aside.png") 0 0 no-repeat;
 }
 
 .im-aside-notice--close {
@@ -11808,7 +11808,7 @@ input.login_big_text {
 
 .media-video-play {
     background: #ffffff;
-    background: #ffffff7f url("/images/icons/video_play_small.png?1") 19px 13px no-repeat;
+    background: #ffffff7f url("https://vk.com/images/icons/video_play_small.png?1") 19px 13px no-repeat;
 }
 
 .media-video-play:hover {
@@ -12114,7 +12114,7 @@ input.login_big_text {
 }
 
 #marketplace .market_content .market_row .market_place_common_friend_badge {
-    background: #000000 url("/images/svg_icons/market_common_friends_badge.svg?2") no-repeat 1px 3px;
+    background: #000000 url("https://vk.com/images/svg_icons/market_common_friends_badge.svg?2") no-repeat 1px 3px;
 }
 
 #marketplace .market_content .market_row .market_edit_actions {
@@ -12442,7 +12442,7 @@ th.sortable {
 
 .video_module .video .page_video_play_icon {
     background: #ffffff;
-    background: #ffffff7f url("/images/icons/video_play_small.png?1") 19px 13px no-repeat;
+    background: #ffffff7f url("https://vk.com/images/icons/video_play_small.png?1") 19px 13px no-repeat;
 }
 
 .video_module .video .page_video_play_icon:hover {
@@ -13016,7 +13016,7 @@ div.fc_editable:focus~.placeholder .ph_content {
 }
 
 .sticker_hints_arrow {
-    background: #000000 url("/images/icons/stickers_hints_arrow.png") no-repeat 50% 50%;
+    background: #000000 url("https://vk.com/images/icons/stickers_hints_arrow.png") no-repeat 50% 50%;
     border-left: 1px solid #16181a;
 }
 
@@ -13124,7 +13124,7 @@ div.fc_editable:focus~.placeholder .ph_content {
 
 .top_notify_cont .feedback_live_row .feedback_sticky_icon:after {
     border: 2px solid #000000;
-    background: #b91818 url("/images/svg_icons/feedback/live.svg") no-repeat;
+    background: #b91818 url("https://vk.com/images/svg_icons/feedback/live.svg") no-repeat;
 }
 
 .top_notify_cont ._notify_unread .feed_row:first-child .feedback_row_wrap {
@@ -13355,7 +13355,7 @@ body {
 }
 
 .apps_access_icon {
-    background: url("/images/icons/app_settings.png?1") #36619b;
+    background: url("https://vk.com/images/icons/app_settings.png?1") #36619b;
 }
 
 .apps_deny_email,.apps_deny_phone {
@@ -13394,7 +13394,7 @@ body {
 
 .media-video-play {
     background: #ffffff;
-    background: #ffffff7f url("/images/icons/video_play_small.png?1") 19px 13px no-repeat;
+    background: #ffffff7f url("https://vk.com/images/icons/video_play_small.png?1") 19px 13px no-repeat;
 }
 
 .media-video-play:hover {
@@ -13685,7 +13685,7 @@ body {
 .wall_module .replies_side {
     border: 1px solid #1e2830;
     box-shadow: 0 1px 3px #ffffff19;
-    background: #000000 url("/images/icons/hide_comments.png") no-repeat 50% 50%;
+    background: #000000 url("https://vk.com/images/icons/hide_comments.png") no-repeat 50% 50%;
 }
 
 .wall_module .replies_side:hover {
@@ -14720,7 +14720,7 @@ a.page_media_link_desc {
 }
 
 .page_more_link.loading {
-    background: #0d0f10 url("/images/upload.gif") no-repeat 50% 50%;
+    background: #0d0f10 url("https://vk.com/images/upload.gif") no-repeat 50% 50%;
 }
 
 .choose_box .choose_video_header_back {
@@ -14836,7 +14836,7 @@ a.choose:hover {
 }
 
 .choose_search_cont input {
-    background: #000000 url("/images/magglass.png") no-repeat 5px 6px;
+    background: #000000 url("https://vk.com/images/magglass.png") no-repeat 5px 6px;
 }
 
 .choose_more_btn {
@@ -15259,7 +15259,7 @@ textarea.page_poll_export_code {
 
 .page_gif_play_icon,.page_gif_progress_icon {
     background: #ffffff;
-    background: #ffffff7f url("/images/icons/video_play_small.png?1") 19px 13px no-repeat;
+    background: #ffffff7f url("https://vk.com/images/icons/video_play_small.png?1") 19px 13px no-repeat;
 }
 
 .page_gif_play_icon:hover,.page_gif_progress_icon:hover {
@@ -15335,7 +15335,7 @@ textarea.page_poll_export_code {
 }
 
 .medadd_c_linkimg_scroll_wrap_close {
-    background: #ffffff7f url("/images/delete.png");
+    background: #ffffff7f url("https://vk.com/images/delete.png");
 }
 
 .medadd_c_linkimg_own {
@@ -15344,7 +15344,7 @@ textarea.page_poll_export_code {
 
 .medadd_c_linkimg_container_video_overlay {
     background: #ffffff;
-    background: #ffffff7f url("/images/icons/video_play_small.png?1") 19px 13px no-repeat;
+    background: #ffffff7f url("https://vk.com/images/icons/video_play_small.png?1") 19px 13px no-repeat;
 }
 
 .medadd_c_linkimg_container_video_overlay:hover {
@@ -15433,7 +15433,7 @@ textarea.page_poll_export_code {
 }
 
 .checkin_big {
-    background: #0d1215 url("/images/icons/checkin_big.png") 50% no-repeat;
+    background: #0d1215 url("https://vk.com/images/icons/checkin_big.png") 50% no-repeat;
 }
 
 .page_media_place:hover .checkin_big {
@@ -15822,7 +15822,7 @@ textarea.page_poll_export_code {
 }
 
 .post_suggestions__arrow {
-    background: #000000 url("/images/icons/stickers_hints_arrow.png") no-repeat 50% 50%;
+    background: #000000 url("https://vk.com/images/icons/stickers_hints_arrow.png") no-repeat 50% 50%;
 }
 
 .post_suggestions .post_suggest_word {
@@ -15906,7 +15906,7 @@ textarea.page_poll_export_code {
 }
 
 .fans_fan_bl {
-    background: #808080 url("/images/cross_delete_user.png") no-repeat 50%;
+    background: #808080 url("https://vk.com/images/cross_delete_user.png") no-repeat 50%;
 }
 
 .fans_fan_bl_wrap:hover .fans_fan_bl {
@@ -15914,7 +15914,7 @@ textarea.page_poll_export_code {
 }
 
 #fans_idol_search_inp {
-    background: url("/images/magglass.png") no-repeat scroll 5px 6px #000000;
+    background: url("https://vk.com/images/magglass.png") no-repeat scroll 5px 6px #000000;
 }
 
 }
@@ -15941,7 +15941,7 @@ textarea.page_poll_export_code {
 
 .media-video-play {
     background: #ffffff;
-    background: #ffffff7f url("/images/icons/video_play_small.png?1") 19px 13px no-repeat;
+    background: #ffffff7f url("https://vk.com/images/icons/video_play_small.png?1") 19px 13px no-repeat;
 }
 
 .media-video-play:hover {
@@ -16173,7 +16173,7 @@ textarea.page_poll_export_code {
 }
 
 #photos_albums_container .photo_row .img_link.no_photo {
-    background: #090e13 url("/images/camera_big.png?1") 50% 60px no-repeat!important;
+    background: #090e13 url("https://vk.com/images/camera_big.png?1") 50% 60px no-repeat!important;
 }
 
 #photos_albums_container .photo_row .photo_album_count {
@@ -16482,7 +16482,7 @@ textarea.page_poll_export_code {
 }
 
 .photos_choose_album_link.no_photo {
-    background: #090e13 url("/images/camera_big.png?1") 50% 58px no-repeat!important;
+    background: #090e13 url("https://vk.com/images/camera_big.png?1") 50% 58px no-repeat!important;
 }
 
 .photos_choose_album_title {
@@ -16500,7 +16500,7 @@ textarea.page_poll_export_code {
 }
 
 .photos_choose_more.photos_choose_more_loading {
-    background: #0d1215 url("/images/upload.gif") no-repeat 50%;
+    background: #0d1215 url("https://vk.com/images/upload.gif") no-repeat 50%;
 }
 
 .photos_choose_more:hover,.photos_choose_more_albums:hover {
@@ -16553,7 +16553,7 @@ textarea.page_poll_export_code {
 
 .media-video-play {
     background: #ffffff;
-    background: #ffffff7f url("/images/icons/video_play_small.png?1") 19px 13px no-repeat;
+    background: #ffffff7f url("https://vk.com/images/icons/video_play_small.png?1") 19px 13px no-repeat;
 }
 
 .media-video-play:hover {
@@ -16736,7 +16736,7 @@ textarea.page_poll_export_code {
 
 .media-video-play {
     background: #ffffff;
-    background: #ffffff7f url("/images/icons/video_play_small.png?1") 19px 13px no-repeat;
+    background: #ffffff7f url("https://vk.com/images/icons/video_play_small.png?1") 19px 13px no-repeat;
 }
 
 .media-video-play:hover {
@@ -17037,7 +17037,7 @@ textarea.page_poll_export_code {
 }
 
 #pv_actions .left,#pv_actions .right {
-    background: #000000 url("/images/photorot.gif") no-repeat 0px 0px;
+    background: #000000 url("https://vk.com/images/photorot.gif") no-repeat 0px 0px;
 }
 
 .pv_cont .narrow_column {
@@ -17147,7 +17147,7 @@ textarea.page_poll_export_code {
 }
 
 .pva_no_photos {
-    background: #090e13 url("/images/camera_big.png?1") 50% 56px no-repeat!important;
+    background: #090e13 url("https://vk.com/images/camera_big.png?1") 50% 56px no-repeat!important;
 }
 
 #pva_more,#pva_more_photos,#pvsa_more_photos {
@@ -17448,7 +17448,7 @@ textarea.pe_textarea {
 
 .page_post_video_play_inline {
     background: #ffffff;
-    background: #ffffff7f url("/images/icons/video_play_small.png?1") 19px 13px no-repeat;
+    background: #ffffff7f url("https://vk.com/images/icons/video_play_small.png?1") 19px 13px no-repeat;
 }
 
 .page_post_video_play_inline:hover {
@@ -17474,7 +17474,7 @@ textarea.pe_textarea {
 }
 
 .page_album_nocover {
-    background: #090e13 url("/images/camera_big.png?1") no-repeat 50% 45%;
+    background: #090e13 url("https://vk.com/images/camera_big.png?1") no-repeat 50% 45%;
 }
 
 .page_album_nocover .page_album_title {
@@ -17503,7 +17503,7 @@ textarea.pe_textarea {
 }
 
 .page_market_album_nocover {
-    background: #090e13 url("/images/icons/mall_icon.png?2") no-repeat 50% 45%;
+    background: #090e13 url("https://vk.com/images/icons/mall_icon.png?2") no-repeat 50% 45%;
 }
 
 .page_doc_row {
@@ -18100,7 +18100,7 @@ textarea.pe_textarea {
 }
 
 #profile_notification .hide_notice {
-    background: #1e2c3b url("/images/icons/xicon_f7.gif") no-repeat;
+    background: #1e2c3b url("https://vk.com/images/icons/xicon_f7.gif") no-repeat;
 }
 
 #profile_notification_top {
@@ -18125,7 +18125,7 @@ textarea.pe_textarea {
 }
 
 .gifts_inverted_loading .profile_gifts_send {
-    background: #5b80a6 url('/images/upload_inv_mini.gif') right 5px no-repeat;
+    background: #5b80a6 url('https://vk.com/images/upload_inv_mini.gif') right 5px no-repeat;
 }
 
 .profile_gifts_send .strong_link {
@@ -18204,11 +18204,11 @@ div.profile_online {
 }
 
 #profile_map_cont>ymaps:first-child {
-    background: #000000 url("/images/upload.gif") no-repeat 50% 50%!important;
+    background: #000000 url("https://vk.com/images/upload.gif") no-repeat 50% 50%!important;
 }
 
 .is_2x #profile_map_cont>ymaps:first-child {
-    background: #080808 url("/images/upload_2x.gif") no-repeat 50% 50%!important;
+    background: #080808 url("https://vk.com/images/upload_2x.gif") no-repeat 50% 50%!important;
 }
 
 .gift_tt_header {
@@ -18275,7 +18275,7 @@ div.profile_online {
 }
 
 .public_help_block:before {
-    background: #36619b url('/images/svg_icons/groups/market.svg') no-repeat 50% 50%;
+    background: #36619b url('https://vk.com/images/svg_icons/groups/market.svg') no-repeat 50% 50%;
 }
 
 }
@@ -18930,7 +18930,7 @@ textarea.EditableLabel__textarea {
 }
 
 .search_filters_minimized_text {
-    background: #000000 url("/images/search_integration.png") no-repeat;
+    background: #000000 url("https://vk.com/images/search_integration.png") no-repeat;
 }
 
 .search_sep {
@@ -19397,7 +19397,7 @@ a.settings_blb_title {
 }
 
 .settings_menu_rows .olist_item_menu .olist_item_photo {
-    background: #0a1119 url("/images/icons/menu_icon.png?9") no-repeat 8px -438px;
+    background: #0a1119 url("https://vk.com/images/icons/menu_icon.png?9") no-repeat 8px -438px;
 }
 
 .settings_menu_rows .olist_item_menu.olist_item_no_market .olist_item_photo {
@@ -21436,11 +21436,11 @@ input[type=range].step_slider:focus::-ms-fill-upper {
 .dd_menu_header div {
     border: 1px solid #4c6d92;
     color: #000000;
-    background: #4c6d92 url("/images/flydead.gif") no-repeat right -13px;
+    background: #4c6d92 url("https://vk.com/images/flydead.gif") no-repeat right -13px;
 }
 
 .dd_menu_header.leftArrow div {
-    background: #4c6d92 url("/images/flydead.gif") no-repeat 1px -13px;
+    background: #4c6d92 url("https://vk.com/images/flydead.gif") no-repeat 1px -13px;
 }
 
 .dd_header_hover {
@@ -21448,7 +21448,7 @@ input[type=range].step_slider:focus::-ms-fill-upper {
 }
 
 .dd_header_hover div {
-    background: #171e25 url("/images/flydead.gif") no-repeat right 5px;
+    background: #171e25 url("https://vk.com/images/flydead.gif") no-repeat right 5px;
     color: #85b1d3;
     border-color: #171e25;
 }
@@ -21521,7 +21521,7 @@ input[type=range].step_slider:focus::-ms-fill-upper {
 }
 
 .mdd-rtl.mdd-wrap .mdd-item-selected,.mdd-rtl.mdd-wrap .mdd-item-selected:hover {
-    background: #0a0d12 url("/images/flydead_flat.gif") no-repeat 0% 1px;
+    background: #0a0d12 url("https://vk.com/images/flydead_flat.gif") no-repeat 0% 1px;
 }
 
 .mdd-wrap .mdd-selected {
@@ -21797,7 +21797,7 @@ input[type=range].step_slider:focus::-ms-fill-upper {
 
 .media-video-play {
     background: #ffffff;
-    background: #ffffff7f url("/images/icons/video_play_small.png?1") 19px 13px no-repeat;
+    background: #ffffff7f url("https://vk.com/images/icons/video_play_small.png?1") 19px 13px no-repeat;
 }
 
 .media-video-play:hover {
@@ -21993,7 +21993,7 @@ input[type=range].step_slider:focus::-ms-fill-upper {
 
 .media-video-play {
     background: #ffffff;
-    background: #ffffff7f url("/images/icons/video_play_small.png?1") 19px 13px no-repeat;
+    background: #ffffff7f url("https://vk.com/images/icons/video_play_small.png?1") 19px 13px no-repeat;
 }
 
 .media-video-play:hover {
@@ -23645,7 +23645,7 @@ a.wk_video img {
 
 a.wk_inline_video div.video_play_inline {
     background: #ffffff;
-    background: #ffffff7f url("/images/icons/video_play_small.png?1") 19px 13px no-repeat;
+    background: #ffffff7f url("https://vk.com/images/icons/video_play_small.png?1") 19px 13px no-repeat;
 }
 
 a.wk_inline_video div.video_play_inline:hover {
@@ -25231,7 +25231,7 @@ a {
 }
 
 .tu_img {
-    background: #000000 url("/images/mobile/uploading.gif") no-repeat 50%;
+    background: #000000 url("https://m.vk.com/images/mobile/uploading.gif") no-repeat 50%;
     border: 2px solid #000000;
     -webkit-box-shadow: 0 1px 3px -1px #ffffff99;
     -moz-box-shadow: 0 1px 3px -1px #ffffff99;
@@ -25276,7 +25276,7 @@ a {
 }
 
 .mt_loading {
-    background: url("/images/mobile/wgupload.gif?2") #ffffff no-repeat 50%;
+    background: url("https://m.vk.com/images/mobile/wgupload.gif?2") #ffffff no-repeat 50%;
     background-color: #ffffff7f;
 }
 
@@ -25774,7 +25774,7 @@ div.pm_item .pm_counter {
 }
 
 .album_cnt {
-    background: #ffffff url("/images/mobile/camera_white.png") no-repeat 8px;
+    background: #ffffff url("https://m.vk.com/images/mobile/camera_white.png") no-repeat 8px;
     background-color: #ffffff7f;
     color: #000000;
 }
@@ -26621,7 +26621,7 @@ div.pm_item .pm_counter {
 }
 
 .zpv_thumb_uploading {
-    background: #000000 url("/images/mobile/uploading.gif") no-repeat 50%;
+    background: #000000 url("https://m.vk.com/images/mobile/uploading.gif") no-repeat 50%;
 }
 
 .zpv_crop_saving .zpv_crop_box {
@@ -27822,7 +27822,7 @@ a.Pad__corner, a.Popup__headerCorner {
 
 .audio_artist_snippet.audio_artist_snippet_big .audio_artist_snippet__scrim {
     border-top: 1px solid #1c1e20;
-    background: url('/images/audio/scrim_bottom_4percent.png') #000000 repeat-x 0 0;
+    background: url('https://m.vk.com/images/audio/scrim_bottom_4percent.png') #000000 repeat-x 0 0;
 }
 
 .audio_artist_snippet.audio_artist_snippet_big .audio_artist_snippet__play {
@@ -28458,7 +28458,7 @@ a.Pad__corner, a.Popup__headerCorner {
 
 .article figure[data-type="102"] .article_object_video_play {
     background: #ffffff;
-    background: #ffffff7f url("/images/icons/video_play_small.png?1") 19px 13px no-repeat;
+    background: #ffffff7f url("https://m.vk.com/images/icons/video_play_small.png?1") 19px 13px no-repeat;
 }
 
 .article figure[data-type="102"] .article_object_video_play:hover {
@@ -28540,7 +28540,7 @@ body.article_body.article_dark {
 }
 
 figure[data-type="102"] .article_object_video_play {
-    background: #ffffff7f url('/images/icons/video_play_small.png') 19px 13px no-repeat;
+    background: #ffffff7f url('https://m.vk.com/images/icons/video_play_small.png') 19px 13px no-repeat;
 }
 
 .articleView__header {
@@ -29153,7 +29153,7 @@ a.appWidget__matches_match:hover {
 }
 
 .appWidget__matches_live_icon a, a.appWidget__matches_live_icon {
-    background: #b2100a url('/images/svg_icons/app_widget_matches_live.svg') no-repeat 8px 8px;
+    background: #b2100a url('https://m.vk.com/images/svg_icons/app_widget_matches_live.svg') no-repeat 8px 8px;
 }
 
 .appWidget__matches_live_icon a:hover, a.appWidget__matches_live_icon:hover {

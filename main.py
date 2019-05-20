@@ -113,7 +113,7 @@ for fn in FILES:
         continue
     with open(f'{fn}.css', 'r') as fin:
         print(f'processing {fn}.css', end=' ' * (20 - len(fn)), flush=True)
-        inverted_css: str = invert(''.join(fin.readlines()))
+        inverted_css: str = invert(''.join(fin.readlines()), url_root='https://vk.com')
         # remove properties starting from asterix unsupported by Stylus add-on
         # remove lines containing “progid:DXImageTransform.Microsoft” unsupported by Stylus add-on
         inverted_css = '\n'.join(filter(lambda l: (not l.strip().startswith('*')
@@ -150,7 +150,7 @@ for fn in MOBILE_FILES:
         print(f'failed to the get mobile version of {fn}.css')
         continue
     with open(f'm.{fn}.css', 'r') as fin:
-        inverted_css: str = invert(''.join(fin.readlines()))
+        inverted_css: str = invert(''.join(fin.readlines()), url_root='https://m.vk.com')
         if not inverted_css:
             continue
         # remove properties starting from asterix unsupported by Stylus add-on
