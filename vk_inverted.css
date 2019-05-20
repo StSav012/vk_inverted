@@ -24452,6 +24452,57 @@ input.focused {
 }
 */
 
+
+/* icon at oauth.vk.com */
+.apps_access_messages {
+    background-position:0 0
+}
+.apps_access_profile {
+    background-position:0 -40px
+}
+.apps_access_friends {
+    background-position:0 -80px
+}
+.apps_access_photos {
+    background-position:0 -120px
+}
+.apps_access_audio {
+    background-position:0 -160px
+}
+.apps_access_video {
+    background-position:0 -200px
+}
+.apps_access_ads, .apps_access_adsweb {
+    background-position:0 -240px
+}
+.apps_access_offline {
+    background-position:0 -280px
+}
+.apps_access_docs, .apps_access_wall {
+    background-position:0 -320px
+}
+.apps_access_groups {
+    background-position:0 -360px
+}
+.apps_access_stats {
+    background-position:0 -400px
+}
+.apps_access_email, .apps_deny_email {
+    background-position:0 -440px
+}
+.apps_access_market {
+    background-position:0 -480px
+}
+.apps_access_notifications {
+    background-position:0 -520px
+}
+.apps_access_phone, .apps_deny_phone {
+    background-position:0 -560px
+}
+.apps_access_stories {
+    background-position:0 -640px
+}
+
 }
 
 @-moz-document domain("m.vk.com") {
