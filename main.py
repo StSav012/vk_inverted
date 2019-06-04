@@ -10,6 +10,7 @@ import json
 import hashlib
 
 FILES: List[str] = [
+    'addresses',
     # 'aes_light',
     'apps',
     'article',

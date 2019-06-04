@@ -1,5 +1,178 @@
 @-moz-document domain("vk.com") {
 
+/* auto generated from addresses.css */
+.h4-text {
+    color: #ffffff;
+}
+
+.metro_color_0:before {
+    background: #ffffff;
+}
+
+.metro_color_ff0001:before {
+    background: #ff0000;
+}
+
+.metro_color_0000ff:before {
+    background: #0000ff;
+}
+
+.metro_color_000000:before {
+    background: #ffffff;
+}
+
+.metro_color_ff0000:before {
+    background: #ff0000;
+}
+
+.metro_color_ffffff:before {
+    background: #000000;
+}
+
+.metro_color_ff0001:before {
+    background: #ff0000;
+}
+
+.metro_color_fccc0a:before {
+    background: #f5c502;
+}
+
+.metro_color_00933c:before {
+    background: #6cffa8;
+}
+
+.metro_color_ff6319:before {
+    background: #e54900;
+}
+
+.metro_color_4dc6f4:before {
+    background: #0a83b2;
+}
+
+.metro_color_a7a9ac:before {
+    background: #525458;
+}
+
+.metro_color_2850ad:before {
+    background: #5179d7;
+}
+
+.metro_color_9300c4:before {
+    background: #ce3bff;
+}
+
+.metro_color_ee352e:before {
+    background: #d11810;
+}
+
+.metro_color_a8d92d:before {
+    background: #a1d226;
+}
+
+.metro_color_a6b4d2:before {
+    background: #2d3a58;
+}
+
+.metro_color_00b8ac:before {
+    background: #46fff3;
+}
+
+.metro_color_996633:before {
+    background: #cb9966;
+}
+
+.wk_address_content .addresses_header {
+    background-color: #080a0d;
+    border-bottom: 1px solid #121317;
+}
+
+.wk_address_content .addresses_wrap .addresses_map {
+    border: solid 1px #ffffff14;
+    background-color: #0a0b0f;
+}
+
+.wk_address_content .addresses_wrap .address .address_wrap {
+    box-shadow: inset 0 -1px 0 0 #121317;
+}
+
+.wk_address_content .addresses_wrap .address.highlighted {
+    background: #080a0d;
+}
+
+.wk_address_content .addresses_wrap .address .address_timetable .address_timetable_one_day {
+    color: #9a9a9a;
+}
+
+.wk_address_content .addresses_wrap .address .address_timetable .address_timetable_one_day.on {
+    color: #ffffff;
+}
+
+.wk_address_content .addresses_wrap .address .address_time_status .address_time_status_cur_time {
+    color: #9a9a9a;
+}
+
+.wk_address_content .addresses_wrap .address .address_time_status .address_time_status_cur_time:before {
+    color: #6c6c6c;
+}
+
+.wk_address_content .addresses_wrap .address .address_time_status .address_time_status_cur.status_close {
+    color: #b91818;
+}
+
+.wk_address_content .addresses_wrap .address .address_time_status .address_time_status_cur_time {
+    color: #ffffff;
+}
+
+.wk_address_content .addresses_wrap .address .address_time_status .address_time_status_cur_time:before {
+    color: #6c6c6c;
+}
+
+.wk_address_content .address_time_status_cur_time {
+    color: #9a9a9a;
+}
+
+.circle_layout,.circle_cluster_layout {
+    box-shadow: 0 2px 20px 0 #ffffff3d;
+    border: solid 3px #000000;
+}
+
+.circle_cluster_layout {
+    background-color: #090909;
+}
+
+.address_layout {
+    background-color: #000000;
+    box-shadow: 0 20px 40px 0 #ffffff51;
+}
+
+.address_layout .address_layout_content .address_layout_content_time .address_time_status_cur.status_close {
+    color: #ffffff;
+}
+
+.address_layout .address_layout_content .address_layout_content_time .address_time_status_cur.status_open {
+    color: #4cb34c;
+}
+
+.address_layout .address_layout_content .address_layout_content_time .address_time_status_cur_time {
+    color: #9a9a9a;
+}
+
+.address_layout .address_layout_content .address_layout_content_time .address_time_status_cur_time:before {
+    color: #6c6c6c;
+}
+
+.address_layout .address_layout_content .address_layout_content_more {
+    color: #79a7d5;
+}
+
+.address_layout .arrow {
+    background-color: #000000;
+}
+
+}
+
+@-moz-document domain("vk.com") {
+
 /* auto generated from apps.css */
 .h4-text {
     color: #ffffff;
