@@ -16,6 +16,7 @@ FILES: List[str] = [
     'article',
     'article_editor',
     'audio',
+    'board',
     'bookmarks',
     'common',
     'datepicker',

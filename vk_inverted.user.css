@@ -2,7 +2,7 @@
 @name         Auto Dark VK
 @description  Mostly automatically created dark style for the desktop version of vk.com. Testing a new algorithm.
 @namespace    github.com/stsav012/vk_inverted
-@version      0.2.20190604113630
+@version      0.2.20190610112204
 @updateURL    https://github.com/StSav012/vk_inverted/raw/master/vk_inverted.user.css
 ==/UserStyle== */
 @-moz-document domain("vk.com") {
@@ -3792,6 +3792,111 @@ body.article_body.article_dark {
 .audio_artist_tag__link_award {
     background-image: -o-linear-gradient(189deg, #bf0065, #7836ac 52%, #1d35b8);
     background-image: linear-gradient(261deg, #bf0065, #7836ac 52%, #1d35b8);
+}
+
+}
+
+@-moz-document domain("vk.com") {
+
+/* auto generated from board.css */
+.h4-text {
+    color: #ffffff;
+}
+
+.blst_row {
+    border-bottom: 1px solid #121317;
+}
+
+.blst_last:hover {
+    background-color: #0a0b0f;
+}
+
+.blst_mem {
+    color: #7495bc;
+}
+
+.blst_date {
+    color: #6c6c6c;
+}
+
+.blst_title {
+    color: #7495bc;
+}
+
+.blst_other {
+    color: #9a9a9a;
+}
+
+.blst_load_more {
+    border-top: 1px solid #121317;
+}
+
+.blst_load_more:hover {
+    background: #0a0b0f;
+}
+
+#bnt_warn {
+    color: #9a9a9a;
+}
+
+.bet_wrap .bnt_media_preview {
+    border-top: 1px solid #121317;
+}
+
+.bt_header {
+    border-bottom: 1px solid #121317;
+}
+
+.bp_post {
+    border: solid #121317;
+}
+
+.bp_post.bp_selected {
+    background-color: #020304;
+}
+
+.bp_post.bp_selected.bp_animated {
+    background-color: #ffffff;
+}
+
+.bp_deleted_text {
+    color: #6c6c6c;
+}
+
+.bp_author {
+    color: #7495bc;
+}
+
+a.bp_date {
+    color: #6c6c6c;
+}
+
+.bp_date {
+    color: #9a9a9a;
+}
+
+.bp_edited_by {
+    color: #6c6c6c;
+}
+
+.board_search_only {
+    color: #9a9a9a;
+}
+
+.bpe_auth,.bpe_auth_lnk {
+    color: #6c6c6c;
+}
+
+.bpe_warn {
+    color: #9a9a9a;
+}
+
+.bv_title {
+    color: #7495bc;
+}
+
+.bv_wrap .bt_pages_wrap {
+    border-bottom: 1px solid #121317;
 }
 
 }
@@ -8927,6 +9032,14 @@ textarea.EditableLabel__textarea {
     background-color: #000000;
 }
 
+.WarningNotification__box {
+    background: #000000;
+}
+
+.WarningNotification__title {
+    color: #dddddd;
+}
+
 .group_info_block .label {
     color: #7d7d7d;
 }
@@ -13807,6 +13920,14 @@ body {
     background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20height%3D%229%22%20viewBox%3D%220%200%2011%209%22%20width%3D%2211%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M7.9%200C9.612%200%2011%201.36%2011%203.039c0%201.688-.69%202.534-3.597%204.75L6.063%208.81a.931.931%200%200%201-1.126%200l-1.34-1.022C.69%205.573%200%204.727%200%203.039%200%201.36%201.388%200%203.1%200c.904%200%202.4.9%202.4%202.25C5.5.9%206.996%200%207.9%200z%22%20fill%3D%22%23cc0014%22%2F%3E%3C%2Fsvg%3E');
 }
 
+.like_btn_indicator.like .like_button_icon {
+    background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20width%3D%2212%22%20height%3D%2212%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M9.25%202C10.625%202%2012%203.363%2012%205.045c0%201.69-.69%202.535-3.59%204.74l-1.348%201.026a.93.93%200%200%201-1.124%200L4.59%209.786C1.69%207.58%201%206.734%201%205.046%201%203.362%202.375%202%203.75%202s2.52.9%202.75%202.249C6.73%202.899%207.875%202%209.25%202z%22%20fill%3D%22%2331353c%22%2F%3E%3C%2Fsvg%3E');
+}
+
+.like_btn_indicator.comment .like_button_icon {
+    background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20width%3D%2212%22%20height%3D%2212%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M8%209l-3.602%202.701c-.226.17-.398.077-.398-.196V9H2.923c-.669%200-.911-.07-1.156-.2a1.363%201.363%200%200%201-.567-.567c-.13-.245-.2-.487-.2-1.156V2.923c0-.669.07-.911.2-1.156.131-.244.323-.436.567-.567.245-.13.487-.2%201.156-.2h7.154c.669%200%20.911.07%201.156.2.244.131.436.323.567.567.13.245.2.487.2%201.156v4.154c0%20.669-.07.911-.2%201.156-.131.244-.323.436-.567.567-.245.13-.487.2-1.156.2H8z%22%20fill%3D%22%2331353c%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E');
+}
+
 .like_button_count,.like_button_label {
     color: #858d98;
 }
@@ -14539,11 +14660,19 @@ body {
     background: url('data:image/svg+xml;charset=utf-8,%3Csvg%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20width%3D%2224%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%20transform%3D%22%22%3E%3Cpath%20d%3D%22m0%200h24v24h-24z%22%20%2F%3E%3Cpath%20d%3D%22m9.999976%204c.5522847%200%201%20.44771525%201%201v14c0%20.5522847-.4477153%201-1%201-.55228475%200-1-.4477153-1-1v-14c0-.55228475.44771525-1%201-1zm-4%209c.55228475%200%201%20.4477153%201%201v5c0%20.5522847-.44771525%201-1%201s-1-.4477153-1-1v-5c0-.5522847.44771525-1%201-1zm8-2c.5522847%200%201%20.4477153%201%201v7c0%20.5522847-.4477153%201-1%201s-1-.4477153-1-1v-7c0-.5522847.4477153-1%201-1zm4-4c.5522847%200%201%20.44771525%201%201v11c0%20.5522847-.4477153%201-1%201s-1-.4477153-1-1v-11c0-.55228475.4477153-1%201-1z%22%20fill%3D%22%23656d7d%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E') no-repeat 50% / 28px;
 }
 
+.FeedRecommendedApp__img {
+    border: 1px solid #ffffff14;
+}
+
+.FeedRecommendedApp__genre {
+    color: #6c6c6c;
+}
+
 .thumbed_link:not(.page_media_wrap) {
     border: 1px solid #cce0fe1e;
 }
 
-.wall_module .post--with-likes:not(.post_copy):not(.post_btl):not(.post_wf):not(.post_fr_likes) .wall_text .thumbed_link:last-child {
+.wall_module:not(.search_results) .post--with-likes:not(.post_copy):not(.post_btl):not(.post_wf):not(.post_fr_likes) .wall_text .thumbed_link:last-child {
     background: #000000;
 }
 
@@ -14623,7 +14752,7 @@ body {
     background-color: #1f69c0;
 }
 
-.wall_module .post--with-likes:not(.post_copy):not(.post_btl):not(.post_wf):not(.post_fr_likes) .wall_text .media_link:last-child {
+.wall_module:not(.search_results) .post--with-likes:not(.post_copy):not(.post_btl):not(.post_wf):not(.post_fr_likes) .wall_text .media_link:last-child {
     background: #000000;
 }
 
