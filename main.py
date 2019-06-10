@@ -24,6 +24,7 @@ FILES: List[str] = [
     'docs',
     'feed',
     'fonts_cnt',
+    'graffiti_new',
     'groups',
     'im',
     'login',

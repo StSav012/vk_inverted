@@ -2,7 +2,7 @@
 @name         Auto Dark VK
 @description  Mostly automatically created dark style for the desktop version of vk.com. Testing a new algorithm.
 @namespace    github.com/stsav012/vk_inverted
-@version      0.2.20190610112931
+@version      0.2.20190610113129
 @updateURL    https://github.com/StSav012/vk_inverted/raw/master/vk_inverted.user.css
 ==/UserStyle== */
 @-moz-document domain("vk.com") {
@@ -8163,6 +8163,56 @@ a.docs_item_name {
 
 .eltt_likes_feed:after {
     background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ctitle%3Ehide_24%3C%2Ftitle%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%20opacity%3D%22.7%22%3E%3Cpath%20d%3D%22M0%200H24V24H0z%22%2F%3E%3Cg%20transform%3D%22translate%287%207%29%22%20stroke%3D%22%234c5767%22%20stroke-linecap%3D%22round%22%20stroke-width%3D%221.6%22%3E%3Cpath%20d%3D%22M0%2010L10%200%22%2F%3E%3Cpath%20d%3D%22M10%2010L0%200%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+}
+
+}
+
+@-moz-document domain("vk.com") {
+
+/* auto generated from graffiti_new.css */
+.h4-text {
+    color: #ffffff;
+}
+
+.graffiti_wrap {
+    background-color: #020304;
+}
+
+.graffiti_drawarea_wrap {
+    background-color: #000000;
+    border: 1px solid #121317;
+}
+
+.graffiti_resize {
+    border-bottom: 1px solid #121317;
+}
+
+.graffiti_tools {
+    background-color: #000000;
+}
+
+.graffiti_slider_caption {
+    color: #9a9a9a;
+}
+
+.graffiti_slider,.graffiti_slider_thumb {
+    background-color: #4776ae;
+}
+
+.graffiti_slider_thumb:before {
+    background-color: #4776ae;
+}
+
+.graffiti_colorpreview_box {
+    background-color: #5d7ca0;
+}
+
+.graffiti_colorpicker_cell {
+    border: 1px solid #cccccc;
+}
+
+.graffiti_colorpicker_cell:hover {
+    border-color: #000000;
 }
 
 }

@@ -8162,6 +8162,56 @@ a.docs_item_name {
 
 @-moz-document domain("vk.com") {
 
+/* auto generated from graffiti_new.css */
+.h4-text {
+    color: #ffffff;
+}
+
+.graffiti_wrap {
+    background-color: #020304;
+}
+
+.graffiti_drawarea_wrap {
+    background-color: #000000;
+    border: 1px solid #121317;
+}
+
+.graffiti_resize {
+    border-bottom: 1px solid #121317;
+}
+
+.graffiti_tools {
+    background-color: #000000;
+}
+
+.graffiti_slider_caption {
+    color: #9a9a9a;
+}
+
+.graffiti_slider,.graffiti_slider_thumb {
+    background-color: #4776ae;
+}
+
+.graffiti_slider_thumb:before {
+    background-color: #4776ae;
+}
+
+.graffiti_colorpreview_box {
+    background-color: #5d7ca0;
+}
+
+.graffiti_colorpicker_cell {
+    border: 1px solid #cccccc;
+}
+
+.graffiti_colorpicker_cell:hover {
+    border-color: #000000;
+}
+
+}
+
+@-moz-document domain("vk.com") {
+
 /* auto generated from groups.css */
 .h4-text {
     color: #ffffff;
