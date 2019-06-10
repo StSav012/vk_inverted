@@ -2,7 +2,7 @@
 @name         Auto Dark VK
 @description  Mostly automatically created dark style for the desktop version of vk.com. Testing a new algorithm.
 @namespace    github.com/stsav012/vk_inverted
-@version      0.2.20190610113129
+@version      0.2.20190610122308
 @updateURL    https://github.com/StSav012/vk_inverted/raw/master/vk_inverted.user.css
 ==/UserStyle== */
 @-moz-document domain("vk.com") {
@@ -1734,6 +1734,39 @@ a.app_decline:hover {
 
 body.apps_vkpayMobileTransfer {
     background: #0f1011;
+}
+
+}
+
+@-moz-document domain("vk.com") {
+
+/* auto generated from apps_feed_blocks.css */
+.h4-text {
+    color: #ffffff;
+}
+
+.apps_feedRightAppsBlock__hide {
+    background: url('data:image/svg+xml;charset=utf-8,%3Csvg%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20width%3D%2224%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%20transform%3D%22%22%3E%3Cpath%20d%3D%22m0%200h24v24h-24z%22%2F%3E%3Cpath%20d%3D%22m13.1313708%2012%203.6343146%203.6343146c.3124195.3124194.3124195.8189514%200%201.1313708-.3124194.3124195-.8189514.3124195-1.1313708%200l-3.6343146-3.6343146-3.63431458%203.6343146c-.31241943.3124195-.81895141.3124195-1.13137084%200-.31241944-.3124194-.31241944-.8189514%200-1.1313708l3.63431462-3.6343146-3.63431462-3.63431458c-.31241944-.31241943-.31241944-.81895141%200-1.13137084.31241943-.31241944.81895141-.31241944%201.13137084%200l3.63431458%203.63431462%203.6343146-3.63431462c.3124194-.31241944.8189514-.31241944%201.1313708%200%20.3124195.31241943.3124195.81895141%200%201.13137084z%22%20fill%3D%22%23525a66%22%20fill-rule%3D%22nonzero%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E') no-repeat 50%;
+}
+
+.apps_feedRightAppsBlock__avaWrap:after {
+    border: 1px solid #ffffff14;
+}
+
+.apps_feedRightAppsBlock__name {
+    color: #dddddd;
+}
+
+.apps_feedRightAppsBlock__genre {
+    color: #6c6c6c;
+}
+
+.apps_feedRightAppsBlock__rowControls .flat_button.success {
+    background-color: #4cb34c;
+}
+
+.apps_feedRightAppsBlock__desc {
+    color: #6c6c6c;
 }
 
 }
@@ -25021,6 +25054,18 @@ img[src="https://vk.com/images/icons/im_multichat_50.png"] {
 }
 
 
+/* “contact” image made dark */
+img[src="/images/contact.png"] {
+    filter: invert(100%) hue-rotate(180deg);
+}
+
+
+/* “link” image made dark */
+div[style="background-image:url(/images/lnkouter.png)"] {
+    filter: invert(100%) hue-rotate(180deg);
+}
+
+
 /* “no posts” image made dark */
 .no_posts_cover {
     filter: invert(100%) hue-rotate(180deg);
@@ -25175,9 +25220,16 @@ input.focused {
 }
 
 
-/* emoji block overflow images */
+/* emoji generic pictures */
 .emoji_sprite {
-    filter: invert(100%);
+    filter: invert(100%) hue-rotate(180deg);
+}
+
+
+/* emoji panel overflow shadows */
+.ui_scroll_default_theme.ui_scroll_emoji_theme > .ui_scroll_overflow > .ui_scroll_shadow_bottom,
+.ui_scroll_default_theme.ui_scroll_emoji_theme > .ui_scroll_overflow > .ui_scroll_shadow_top {
+	filter: invert(100%) hue-rotate(180deg);
 }
 
 
@@ -25263,6 +25315,15 @@ input.focused {
 }
 .apps_access_stories {
     background-position:0 -640px
+}
+
+
+/* attach icon fix */
+.deep_active .replies .reply_box_more_attaches::before,
+.deep_active.wall_module .replies .reply_box_more_attaches::before,
+.deep_active.wall_module .wl_replies_block_wrap .reply_box_more_attaches::before,
+.deep_active .wl_replies_block_wrap .reply_box_more_attaches::before {
+	background-size: 18px;
 }
 
 }

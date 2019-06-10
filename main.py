@@ -13,6 +13,7 @@ FILES: List[str] = [
     'addresses',
     # 'aes_light',
     'apps',
+    'apps_feed_blocks',
     'article',
     'article_editor',
     'audio',

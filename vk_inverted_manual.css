@@ -202,6 +202,18 @@ img[src="https://vk.com/images/icons/im_multichat_50.png"] {
 }
 
 
+/* “contact” image made dark */
+img[src="/images/contact.png"] {
+    filter: invert(100%) hue-rotate(180deg);
+}
+
+
+/* “link” image made dark */
+div[style="background-image:url(/images/lnkouter.png)"] {
+    filter: invert(100%) hue-rotate(180deg);
+}
+
+
 /* “no posts” image made dark */
 .no_posts_cover {
     filter: invert(100%) hue-rotate(180deg);
@@ -356,9 +368,16 @@ input.focused {
 }
 
 
-/* emoji block overflow images */
+/* emoji generic pictures */
 .emoji_sprite {
-    filter: invert(100%);
+    filter: invert(100%) hue-rotate(180deg);
+}
+
+
+/* emoji panel overflow shadows */
+.ui_scroll_default_theme.ui_scroll_emoji_theme > .ui_scroll_overflow > .ui_scroll_shadow_bottom,
+.ui_scroll_default_theme.ui_scroll_emoji_theme > .ui_scroll_overflow > .ui_scroll_shadow_top {
+	filter: invert(100%) hue-rotate(180deg);
 }
 
 
@@ -444,4 +463,13 @@ input.focused {
 }
 .apps_access_stories {
     background-position:0 -640px
+}
+
+
+/* attach icon fix */
+.deep_active .replies .reply_box_more_attaches::before,
+.deep_active.wall_module .replies .reply_box_more_attaches::before,
+.deep_active.wall_module .wl_replies_block_wrap .reply_box_more_attaches::before,
+.deep_active .wl_replies_block_wrap .reply_box_more_attaches::before {
+	background-size: 18px;
 }
