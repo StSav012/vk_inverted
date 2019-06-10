@@ -2,7 +2,7 @@
 @name         Auto Dark VK
 @description  Mostly automatically created dark style for the desktop version of vk.com. Testing a new algorithm.
 @namespace    github.com/stsav012/vk_inverted
-@version      0.2.20190610122308
+@version      0.2.20190610124342
 @updateURL    https://github.com/StSav012/vk_inverted/raw/master/vk_inverted.user.css
 ==/UserStyle== */
 @-moz-document domain("vk.com") {
@@ -25039,7 +25039,9 @@ img[src^="https://vk.com/images/dquestion_"][src$=".png"],
 img[src^="/images/camera_"][src$=".png?ava=1"],
 img[src^="/images/deactivated_"][src$=".png?ava=1"],
 img[src^="/images/dquestion_"][src$=".png"],
-a[style="background-image: url('/images/camera_50.png?ava=1')"] {
+a[style^="background-image: url('/images/camera_"][style$=".png?ava=1')"],
+div[style^="background-image: url('/images/camera_"][style$=".png?ava=1')"],
+div[style^="background-image: url('/images/deactivated_"][style$=".png?ava=1')"] {
     filter: invert(100%) hue-rotate(180deg);
 }
 
@@ -25324,6 +25326,12 @@ input.focused {
 .deep_active.wall_module .wl_replies_block_wrap .reply_box_more_attaches::before,
 .deep_active .wl_replies_block_wrap .reply_box_more_attaches::before {
 	background-size: 18px;
+}
+
+
+/* apps actions */
+.apps_edit_actions .icon {
+	filter: invert(100%) hue-rotate(180deg);
 }
 
 }
