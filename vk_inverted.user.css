@@ -2,7 +2,7 @@
 @name         Auto Dark VK
 @description  Mostly automatically created dark style for the desktop version of vk.com. Testing a new algorithm.
 @namespace    github.com/stsav012/vk_inverted
-@version      0.2.20190610112204
+@version      0.2.20190610112931
 @updateURL    https://github.com/StSav012/vk_inverted/raw/master/vk_inverted.user.css
 ==/UserStyle== */
 @-moz-document domain("vk.com") {
@@ -13839,6 +13839,25 @@ body {
 
 .oauth_centered .oauth_wrap_content {
     box-shadow: 0 1px 0 0 #242528, 0 0 0 1px #17181c;
+}
+
+}
+
+@-moz-document domain("vk.com") {
+
+/* auto generated from owner_photo.css */
+.h4-text {
+    color: #ffffff;
+}
+
+.owner_photo_additional {
+    background: #020304;
+    color: #ffffff;
+    border-top: 1px solid #121317;
+}
+
+.owner_photo_crop_wrap .tag_frame {
+    border: 1px solid #0000004c;
 }
 
 }

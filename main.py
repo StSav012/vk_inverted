@@ -32,6 +32,7 @@ FILES: List[str] = [
     'mrtarg',
     'notifier',
     'oauth_popup',
+    'owner_photo',
     'page',
     'page_help',
     'photos',

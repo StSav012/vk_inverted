@@ -13838,6 +13838,25 @@ body {
 
 @-moz-document domain("vk.com") {
 
+/* auto generated from owner_photo.css */
+.h4-text {
+    color: #ffffff;
+}
+
+.owner_photo_additional {
+    background: #020304;
+    color: #ffffff;
+    border-top: 1px solid #121317;
+}
+
+.owner_photo_crop_wrap .tag_frame {
+    border: 1px solid #0000004c;
+}
+
+}
+
+@-moz-document domain("vk.com") {
+
 /* auto generated from page.css */
 .h4-text {
     color: #ffffff;
