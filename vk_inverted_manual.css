@@ -188,8 +188,11 @@ img[src^="/images/camera_"][src$=".png?ava=1"],
 img[src^="/images/deactivated_"][src$=".png?ava=1"],
 img[src^="/images/dquestion_"][src$=".png"],
 a[style^="background-image: url('/images/camera_"][style$=".png?ava=1')"],
+a[style^="background-image: url('/images/camera_"][style$=".png?ava=1');"],
 div[style^="background-image: url('/images/camera_"][style$=".png?ava=1')"],
-div[style^="background-image: url('/images/deactivated_"][style$=".png?ava=1')"] {
+div[style^="background-image: url('/images/camera_"][style$=".png?ava=1');"],
+div[style^="background-image: url('/images/deactivated_"][style$=".png?ava=1')"]
+div[style^="background-image: url('/images/deactivated_"][style$=".png?ava=1');"] {
     filter: invert(100%) hue-rotate(180deg);
 }
 
@@ -265,14 +268,6 @@ div[style="background-image:url(/images/lnkouter.png)"] {
 	background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20height%3D%2224%22%20width%3D%2232%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M0%200h24v24H0z%22%20opacity%3D%22.4%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M14.142%204.52a7.453%207.453%200%200%200-1.058%202.854%204.75%204.75%200%201%200%202.943%207.146%207.467%207.467%200%200%200%202.764%201.284c-.035.812.256%201.317.575%201.794.471.707.294.884%200%201.178l-.59.59c-.294.294-.412.412-1.178%200-.69-.372-1.333-.791-2.725-.418-1.256.72-1.473%201.469-1.623%202.219-.167.833-.417.833-.833.833h-.834c-.416%200-.583%200-.833-.833-.225-.751-.383-1.502-1.631-2.223-1.397-.379-2.08-.002-2.717.422-.707.471-.884.294-1.178%200l-.59-.59c-.294-.294-.412-.412%200-1.178.372-.69.791-1.333.418-2.725-.72-1.256-1.469-1.473-2.219-1.623C2%2013.083%202%2012.833%202%2012.417v-.834c0-.416%200-.583.833-.833.751-.225%201.502-.383%202.223-1.631.379-1.397.002-2.08-.422-2.717-.471-.707-.294-.884%200-1.178l.59-.59c.294-.294.412-.412%201.178%200%20.69.372%201.333.791%202.725.418%201.256-.72%201.473-1.469%201.623-2.219.167-.833.417-.833.833-.833h.834c.416%200%20.583%200%20.833.833.17.567.301%201.133.892%201.687z%22%20fill%3D%22%23fff%22%2F%3E%0A%20%20%20%20%3Cg%20transform%3D%22translate(15%203)%22%3E%0A%20%20%20%20%20%20%3Crect%20fill%3D%22%235a9eff%22%20height%3D%2211%22%20rx%3D%225.5%22%20width%3D%2217%22%2F%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M10%208H9V3h3v1h-2v3h2v1zM5%205h2V3h1v5H7V6H5v2H4V3h1zm7-1h1v3h-1z%22%20fill%3D%22%23fff%22%2F%3E%0A%20%20%20%20%3C%2Fg%3E%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E');
 	margin-right: -8px;
 	width: 32px;
-}
-
-
-/* new replies highlighting fix */
-.wall_module .reply[style]:not([style=""]),
-div.reply_text > div[id][style]:not([style=""]):not([style="display: block;"]):not(.page_post_sized_thumbs) {
-    background-color: #201414 !important;
-    transition: background-color 0.25s ease;
 }
 
 
@@ -481,3 +476,21 @@ input.focused {
 .apps_edit_actions .icon {
 	filter: invert(100%) hue-rotate(180deg);
 }
+
+
+/* post edited fix */
+div[style="background-color: rgb(255, 255, 255);"] {
+    background-color: #221f1b !important;
+    box-shadow: 0 0 0.5em 0.5em #221f1b;
+    transition: background-color 1s ease, box-shadow 1s ease;
+}
+
+
+/* new replies highlighting fix */
+.wall_module .reply[style]:not([style=""]),
+div.reply_text > div[id][style]:not([style=""]):not([style="display: block;"]):not(.page_post_sized_thumbs) {
+    background-color: #221f1b !important;
+    box-shadow: 0 0 0.5em 0.5em #221f1b;
+    transition: background-color 1s ease, box-shadow 1s ease;
+}
+
