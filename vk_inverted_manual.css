@@ -231,6 +231,12 @@ div[style="background-image:url(/images/lnkouter.png)"] {
 }
 
 
+/* add user image made dark */
+.index_new_user_row .index_user_ph:empty {
+    filter: invert(100%) hue-rotate(180deg);
+}
+
+
 /* restore default style for videoplayer, the dark one */
 .videoplayer {
     background: #000;

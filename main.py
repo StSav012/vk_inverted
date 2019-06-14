@@ -28,6 +28,7 @@ FILES: List[str] = [
     'graffiti_new',
     'groups',
     'im',
+    'index',
     'login',
     'market',
     'module',

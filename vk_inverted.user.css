@@ -2,7 +2,7 @@
 @name         Auto Dark VK
 @description  Mostly automatically created dark style for the desktop version of vk.com. Testing a new algorithm.
 @namespace    github.com/stsav012/vk_inverted
-@version      0.2.20190611190519
+@version      0.2.20190614201830
 @updateURL    https://github.com/StSav012/vk_inverted/raw/master/vk_inverted.user.css
 ==/UserStyle== */
 @-moz-document domain("vk.com") {
@@ -12035,6 +12035,107 @@ div.MessageForward__input {
 
 @-moz-document domain("vk.com") {
 
+/* auto generated from index.css */
+.h4-text {
+    color: #ffffff;
+}
+
+.index_page .index_footer_wrap {
+    border-top: 1px solid #11151a;
+}
+
+.index_page .flat_button.secondary.button_light:hover {
+    background-color: #14181e;
+}
+
+.ij_subheader {
+    color: #9a9a9a;
+}
+
+.ij_button {
+    background-color: #5bab4f;
+}
+
+.ij_button.hover,.ij_button:hover {
+    background-color: #57a24b;
+}
+
+.ij_button.active,.ij_button:active {
+    background-color: #64b257;
+}
+
+.ij_label {
+    color: #6c6c6c;
+}
+
+.ij_tt {
+    border: 1px solid #ba5253;
+    background-color: #a03935;
+}
+
+.ij_tt.tt_left:before {
+    border-right-color: #ba5253;
+}
+
+.ij_tt.tt_left:after {
+    border-right-color: #a03935;
+}
+
+.ij_tt.tt_right:before {
+    border-left-color: #ba5253;
+}
+
+.ij_tt.tt_right:after {
+    border-left-color: #a03935;
+}
+
+.ij_tt.tt_w .tt_text {
+    color: #000000;
+}
+
+.index_fbsign {
+    border-top: 1px solid #121317;
+}
+
+.index_fb_continue_with_btn {
+    border: 3px solid #4d72bd;
+    background: #4d72bd;
+}
+
+.index_fb_continue_with_btn:after {
+    border: 2px solid #4d72bd;
+}
+
+.index_terms .wikiSubHeader {
+    border-bottom: 1px solid #171e25;
+    color: #7193ba;
+}
+
+.index_users_info {
+    color: #dddddd;
+}
+
+.index_user_row {
+    border: 1px solid #cce0fe1e;
+    box-shadow: 0 1px 1px #ffffff05, 0 2px 4px #ffffff05;
+}
+
+.index_user_name {
+    color: #ffffff;
+}
+
+.index_new_user_row .index_user_ph {
+    background: #0a1119 url("https://vk.com/images/icons/new_user.png") no-repeat 50% 50%;
+}
+
+.index_new_user_row .index_user_name {
+    color: #4776ae;
+}
+
+}
+
+@-moz-document domain("vk.com") {
+
 /* auto generated from login.css */
 .h4-text {
     color: #ffffff;
@@ -19221,7 +19322,7 @@ div.profile_online {
     background: #00000014;
 }
 
-.eltt .notify_tt_money_transfer .profile_notify_img {
+.eltt .notify_tt_money_link .profile_notify_img,.eltt .notify_tt_money_transfer .profile_notify_img {
     background: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2256%22%20height%3D%2256%22%20viewBox%3D%220%200%2056%2056%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cpath%20d%3D%22M0%200h56v56H0z%22%2F%3E%3Cpath%20fill%3D%22%23326bad%22%20d%3D%22M47%2032.614V21H9v14.154c0%201.337.14%201.822.4%202.311.262.489.646.873%201.135%201.134.489.262.974.4%202.31.4H44.9l3%203.001H13.692c-2.675%200-3.645-.278-4.623-.801a5.452%205.452%200%200%201-2.268-2.268C6.278%2037.953%206%2036.983%206%2034.308V15.692c0-2.675.278-3.645.801-4.623A5.452%205.452%200%200%201%209.07%208.801C10.047%208.278%2011.017%208%2013.692%208h28.616c2.675%200%203.645.278%204.623.801a5.452%205.452%200%200%201%202.268%202.268c.523.978.801%201.948.801%204.623v19.922l-3-3zM47%2018v-3.154c0-1.337-.14-1.822-.4-2.311a2.726%202.726%200%200%200-1.135-1.134c-.489-.262-.974-.401-2.31-.401h-30.31c-1.336%200-1.821.14-2.31.4A2.726%202.726%200%200%200%209.4%2012.536c-.262.489-.401.974-.401%202.31V18h38z%22%2F%3E%3Cpath%20stroke%3D%22%23326bad%22%20stroke-width%3D%223%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20d%3D%22M40.5%2032.5l8%208-8%208%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") no-repeat 0 24px;
 }
 
@@ -25305,6 +25406,12 @@ div[style="background-image:url(/images/lnkouter.png)"] {
 
 /* “no comments” and “closed comments” images made dark */
 .pv_cont .pv_closed_commments_placeholder, .pv_cont .pv_no_commments_placeholder {
+    filter: invert(100%) hue-rotate(180deg);
+}
+
+
+/* add user image made dark */
+.index_new_user_row .index_user_ph:empty {
     filter: invert(100%) hue-rotate(180deg);
 }
 
