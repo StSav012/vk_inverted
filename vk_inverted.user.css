@@ -2,7 +2,7 @@
 @name         Auto Dark VK
 @description  Mostly automatically created dark style for the desktop version of vk.com. Testing a new algorithm.
 @namespace    github.com/stsav012/vk_inverted
-@version      0.2.20190614201830
+@version      0.2.20190616000453
 @updateURL    https://github.com/StSav012/vk_inverted/raw/master/vk_inverted.user.css
 ==/UserStyle== */
 @-moz-document domain("vk.com") {
@@ -25211,6 +25211,13 @@ input.text.ts_input:focus {
 
 .top_audio_play__button::before, .top_audio_play__button {
     background-color: #1e3c5f;
+}
+
+
+/* pick a song from a playlist button */
+.audio_pl_edit_box .ape_add_audios_btn::after, .audio_pl_edit_box .ape_add_pl_audios_btn::after {
+	background-repeat: no-repeat;
+	background-position: 50%;
 }
 
 

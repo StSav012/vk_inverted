@@ -25207,6 +25207,13 @@ input.text.ts_input:focus {
 }
 
 
+/* pick a song from a playlist button */
+.audio_pl_edit_box .ape_add_audios_btn::after, .audio_pl_edit_box .ape_add_pl_audios_btn::after {
+	background-repeat: no-repeat;
+	background-position: 50%;
+}
+
+
 /* notifications count */
 .top_nav_btn:hover .top_notify_count {
     border-color: #1e3c5f;
