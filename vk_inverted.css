@@ -26693,6 +26693,12 @@ div.reply_text > div[id][style] {
 }
 
 
+/* “share to” field color fix */
+.like_share_radio .wdd_text {
+	background-color: black;
+	color: white;
+}
+
 }
 
 @-moz-document domain("m.vk.com") {

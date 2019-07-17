@@ -512,3 +512,9 @@ div.reply_text > div[id][style] {
     transition: background-color 1s ease, box-shadow 1s ease;
 }
 
+
+/* “share to” field color fix */
+.like_share_radio .wdd_text {
+	background-color: black;
+	color: white;
+}
