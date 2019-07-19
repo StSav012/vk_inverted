@@ -15359,11 +15359,11 @@ body {
     border-top: 1px solid #121317;
 }
 
-.post_top_info_wall_event,.post_top_info_wall_group,.post_top_info_wall_guide,.post_top_info_wall_mention,.post_top_info_wall_podcast,.post_top_info_wall_poll_vote,.post_top_info_wall_reply {
+.post_top_info_wall_event,.post_top_info_wall_group,.post_top_info_wall_guide,.post_top_info_wall_mention,.post_top_info_wall_podcast,.post_top_info_wall_poll_vote,.post_top_info_wall_reply,.post_top_info_wall_vkgo {
     box-shadow: 0 0 0 1px #17181c, 0 1px 0 0 #121317;
 }
 
-.post_top_info_wall_podcast {
+.post_top_info_wall_podcast,.post_top_info_wall_vkgo {
     color: #9a9a9a;
 }
 
@@ -21596,6 +21596,14 @@ textarea.EditableLabel__textarea {
     background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%3E%0A%20%20%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%0A%20%20%20%20%3Crect%20width%3D%2215%22%20height%3D%2215%22%20x%3D%22.5%22%20y%3D%22.5%22%20stroke%3D%22%23333d4b%22%20rx%3D%227.5%22%2F%3E%0A%20%20%20%20%3Cpath%20fill%3D%22%23656d7d%22%0A%20%20%20%20%20%20%20%20%20%20d%3D%22M5.67342187%2C6.34423828%20L6.78523828%2C6.34423828%20C6.83357812%2C5.65673828%207.31160547%2C5.22167969%208.05281641%2C5.22167969%20C8.78865625%2C5.22167969%209.26668359%2C5.65136719%209.26668359%2C6.2421875%20C9.26668359%2C6.78466797%209.03572656%2C7.09082031%208.38582422%2C7.48291016%20C7.64998437%2C7.92333984%207.32234766%2C8.40673828%207.34920312%2C9.18017578%20L7.35457422%2C9.58837891%20L8.46639062%2C9.58837891%20L8.46639062%2C9.26611328%20C8.46639062%2C8.72363281%208.66512109%2C8.43896484%209.35799219%2C8.03076172%20C10.0669766%2C7.60644531%2010.4859219%2C7.02099609%2010.4859219%2C6.19384766%20C10.4859219%2C5.02832031%209.52986719%2C4.18505859%208.11189844%2C4.18505859%20C6.55428125%2C4.18505859%205.72176172%2C5.10888672%205.67342187%2C6.34423828%20Z%20M7.97762109%2C12.1235352%20C8.47176172%2C12.1235352%208.80476953%2C11.7958984%208.80476953%2C11.3071289%20C8.80476953%2C10.8076172%208.47176172%2C10.4799805%207.97762109%2C10.4799805%20C7.48348047%2C10.4799805%207.14510156%2C10.8076172%207.14510156%2C11.3071289%20C7.14510156%2C11.7958984%207.48348047%2C12.1235352%207.97762109%2C12.1235352%20Z%22%2F%3E%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E');
 }
 
+.StoryRestriction__inner {
+    background: #ffffff7f;
+}
+
+.StoryRestriction__link {
+    color: #012b4e;
+}
+
 .stories_layers_background {
     background: #ffffffe5;
 }
@@ -22211,6 +22219,22 @@ textarea.EditableLabel__textarea {
 
 .StoriesTooltip .StoriesTooltip__link:after {
     background: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%228%22%20height%3D%228%22%20viewBox%3D%2288%204%208%208%22%3E%3Cg%20fill%3D%22none%22%3E%3Crect%20x%3D%2288%22%20y%3D%224%22%20width%3D%228%22%20height%3D%228%22%2F%3E%3Cpath%20d%3D%22M90.2%2010.8C90%2011.1%2090%2011.5%2090.3%2011.7%2090.6%2011.9%2091%2011.9%2091.2%2011.6L93.8%208.4C94%208.2%2094%207.8%2093.8%207.6L91.2%204.4C91%204.1%2090.6%204.1%2090.3%204.3%2090%204.5%2090%204.9%2090.2%205.2L92.5%208%2090.2%2010.8Z%22%20fill%3D%22%23ffffff%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") no-repeat;
+}
+
+.StoriesTooltip--b {
+    box-shadow: 0 8px 12px 0 #ffffff28, 0 -8px 12px 0 #ffffff19, 0 0 4px 0 #ffffff1e;
+}
+
+.StoriesTooltip--b:before {
+    border-bottom: 7px solid #242e39;
+}
+
+.StoriesTooltip--b:after {
+    border-bottom: 7px solid #000000;
+}
+
+.StoriesTooltipActions__item:hover {
+    background-color: #080a0d;
 }
 
 }
@@ -34256,6 +34280,60 @@ hr {
         background-color: #cccccc;
     }
 
+}
+
+}
+
+@-moz-document domain("vk.me") {
+
+/* auto generated from the vkme.css of vk.me*/
+.h4-text {
+    color: #ffffff;
+}
+
+.installApp {
+    background-color: #000000;
+}
+
+.installApp__link {
+    color: #6a8aae;
+}
+
+body.vkme {
+    background: #0f1011;
+    color: #ffffff;
+}
+
+body.vkme #page_header.p_head1 .back {
+    background: #6688af;
+}
+
+.vkme_top_nav_wrap {
+    background: #6688af;
+}
+
+.vkme_top_nav_wrap .vkme_top_nav a,.vkme_top_nav_wrap .vkme_top_nav a:hover,.vkme_top_nav_wrap .vkme_top_nav a:visited {
+    color: #000000;
+}
+
+.vkme_top_nav_wrap .vkme_top_nav .vkme_top_nav_item.vkme_head_owner_name {
+    color: #000000;
+}
+
+.vkme_top_nav_wrap .vkme_top_nav .vkme_top_nav_item.vkme_head_owner_name:active {
+    background: #668ab2;
+}
+
+.vkme_page_wrap3 .installApp {
+    box-shadow: 0px 1px 2px 0px #d9dcdf33;
+}
+
+.vkme_page_wrap3 .vkme_page_about_wrap .vkme_about_text {
+    color: #9a9a9a;
+}
+
+.vkme_owner_wrap .vkme_owner_info .vkme_owner_description {
+    color: #9a9a9a;
 }
 
 }

@@ -72,6 +72,10 @@ MOBILE_FILES: List[str] = [
     'common',
 ]
 
+VKME_FILES: List[str] = [
+    'vkme',
+]
+
 OVERWRITE_FILES: bool = True
 LOCAL_ONLY: bool = False
 
@@ -164,6 +168,27 @@ for fn in MOBILE_FILES:
         out_lines.append('@-moz-document domain("m.vk.com") {\n')
         section_css: str = f'/* auto generated from the mobile version of {fn}.css */\n' + inverted_css
         out_dict['sections'].append({'code': section_css, 'domains': ['m.vk.com']})
+        out_lines.append(section_css)
+        out_lines.append('}\n')
+
+for fn in VKME_FILES:
+    if not os.path.exists(f'me.{fn}.css'):
+        try:
+            urllib.request.urlretrieve(f'https://vk.me/css/al/{fn}.css', f'me.{fn}.css')
+        except urllib.error.HTTPError:
+            pass
+    if not os.path.exists(f'me.{fn}.css'):
+        print(f'failed to {fn}.css from vk.me')
+        continue
+    with open(f'me.{fn}.css', 'r') as fin:
+        inverted_css: str = invert(''.join(fin.readlines()), url_root='https://vk.me')
+        if not inverted_css:
+            continue
+        # remove properties starting from asterix unsupported by Stylus add-on
+        inverted_css = '\n'.join(filter(lambda l: not l.strip().startswith('*'), inverted_css.splitlines()))
+        out_lines.append('@-moz-document domain("vk.me") {\n')
+        section_css: str = f'/* auto generated from the {fn}.css of vk.me*/\n' + inverted_css
+        out_dict['sections'].append({'code': section_css, 'domains': ['vk.me']})
         out_lines.append(section_css)
         out_lines.append('}\n')
 
