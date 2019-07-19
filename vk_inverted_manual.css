@@ -513,6 +513,18 @@ div.reply_text > div[id][style] {
 }
 
 
+/* just-edited post highlighting fix */
+.wall_post_cont[style^="background-color"] {
+    background-color: #221f1b !important;
+    box-shadow: 0 0 0.5em 0.5em #221f1b;
+    transition: background-color 1s ease, box-shadow 1s ease;
+}
+
+.wall_post_cont {
+    transition: background-color 1s ease, box-shadow 1s ease;
+}
+
+
 /* “share to” field color fix */
 .like_share_radio .wdd_text {
 	background-color: black;

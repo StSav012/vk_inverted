@@ -2,7 +2,7 @@
 @name         Auto Dark VK
 @description  Mostly automatically created dark style for the desktop version of vk.com. Testing a new algorithm.
 @namespace    github.com/stsav012/vk_inverted
-@version      0.2.20190719083614
+@version      0.2.20190719112911
 @updateURL    https://github.com/StSav012/vk_inverted/raw/master/vk_inverted.user.css
 ==/UserStyle== */
 @-moz-document domain("vk.com") {
@@ -26720,6 +26720,18 @@ div.reply_text > div[id][style]:not([style=""]):not([style="display: block;"]):n
 
 .wall_module .reply,
 div.reply_text > div[id][style] {
+    transition: background-color 1s ease, box-shadow 1s ease;
+}
+
+
+/* just-edited post highlighting fix */
+.wall_post_cont[style^="background-color"] {
+    background-color: #221f1b !important;
+    box-shadow: 0 0 0.5em 0.5em #221f1b;
+    transition: background-color 1s ease, box-shadow 1s ease;
+}
+
+.wall_post_cont {
     transition: background-color 1s ease, box-shadow 1s ease;
 }
 
