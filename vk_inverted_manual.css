@@ -530,3 +530,9 @@ div.reply_text > div[id][style] {
 	background-color: black;
 	color: white;
 }
+
+
+/* [class="selector_input selected"] fix */
+[style^="color: rgb(34, 34, 34);"] {
+    color: #dddddd !important;
+}
