@@ -150,12 +150,11 @@ if os.path.exists(fn):
         out_lines.append('}\n')
 
 for fn in MOBILE_FILES:
-    # FIXME: getting wrong file
-    # if not os.path.exists(f'm.{fn}.css'):
-    #     try:
-    #         urllib.request.urlretrieve(f'https://m.vk.com/css/mobile/{fn}.css', f'm.{fn}.css')
-    #     except urllib.error.HTTPError:
-    #         pass
+    if not os.path.exists(f'm.{fn}.css'):
+        try:
+            urllib.request.urlretrieve(f'https://m.vk.com/css/mobile/{fn}.css', f'm.{fn}.css')
+        except urllib.error.HTTPError:
+            pass
     if not os.path.exists(f'm.{fn}.css'):
         print(f'failed to the get mobile version of {fn}.css')
         continue

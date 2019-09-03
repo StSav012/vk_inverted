@@ -2,7 +2,7 @@
 @name         Auto Dark VK
 @description  Mostly automatically created dark style for the desktop version of vk.com. Testing a new algorithm.
 @namespace    github.com/stsav012/vk_inverted
-@version      0.2.20190903170550
+@version      0.2.20190903181353
 @updateURL    https://github.com/StSav012/vk_inverted/raw/master/vk_inverted.user.css
 ==/UserStyle== */
 @-moz-document domain("vk.com") {
@@ -26991,6 +26991,69 @@ body {
     background: #0e1113;
 }
 
+@media (min-width: 882px) {
+    .left_footer_menu li .lfm_item {
+        color: #697280;
+    }
+
+    .MiniAppsCatalog .pcont .PageBlock:after {
+        background-color: #000000;
+    }
+
+    .SliderTabs:after {
+        background: #ffffff;
+    }
+
+    .h .vk_header_tabs .basis__header .SliderTabs {
+        border-left: 1px solid #18191a;
+        border-right: 1px solid #18191a;
+        background: #000000;
+    }
+
+    .SliderTabs__tab {
+        color: #65717e;
+    }
+
+    .SliderTabs__tab_selected:after {
+        background: #4776ae;
+    }
+
+    .ArtistPage,  .audioPlaylist,  .AudioSerp,  .AudioShowcase,  .basis__content .al_loading,  .basisDialogs,  .blog_post,  .BookmarksItem,  .FeedItem,  .GroupsInvite,  .GroupsNear,  .GroupsSearch,  .LikesPhotoBlock,  .MainMenu__splashScreen,  .new_post_container,  .Pad,  .pageAttachMoney,  .pageAttachMoneyAbout,  .PageBlock,  .PageBlock .results.type_statuses .wall_item,  .pageMoneyTransfer,  .recommends_link,  .StoriesFeedBlock,  .StoriesSearchBlock,  .upanel.thumbs_list,  .vk__page_mail .basis,  .wall_item {
+        -webkit-box-shadow: 0 1px 2px 0 #ffffff1e;
+        -moz-box-shadow: 0 1px 2px 0 #ffffff1e;
+        box-shadow: 0 1px 2px 0 #ffffff1e;
+    }
+
+    .SliderTabs_light,  .slim_header_block_top,  .vk_header_tabs .basis__header .SliderTabs {
+        -webkit-box-shadow: 0 1px 2px 0 #ffffff1e;
+        -moz-box-shadow: 0 1px 2px 0 #ffffff1e;
+        box-shadow: 0 1px 2px 0 #ffffff1e;
+    }
+
+    .m .selected2 .create_chat_block:after,  .m .selected2 .create_chat_block:before,  .m .selected2 .need_peers_label:after,  .m .selected2 .need_peers_label:before {
+        background: #090909;
+    }
+
+    .SplashScreen {
+        -webkit-box-shadow: 0 1px 2px 0 #ffffff1e;
+        -moz-box-shadow: 0 1px 2px 0 #ffffff1e;
+        box-shadow: 0 1px 2px 0 #ffffff1e;
+    }
+
+    .SplashScreen_transparent {
+        background: #000000;
+    }
+
+    .vk__page_publish .pcont .slim_header.slim_header_top {
+        background: #000000;
+    }
+
+    .vk__page_publish .create_post_extra {
+        background: #000000;
+    }
+
+}
+
 .button, .small_button, .textfield {
     background: #000000;
 }
@@ -27403,6 +27466,21 @@ a {
     color: #525a66;
 }
 
+@media (min-width: 320px) {
+    .vk .header__back {
+        background-color: #4776ae;
+    }
+
+    .vk ._hover .header__back:hover,  .vk ._touch .header__back.active,  .vk ._touch .header__back.hover {
+        background-color: #5282b8!important;
+    }
+
+    .vk_flex_no .header__back {
+        background-color: #4776ae!important;
+    }
+
+}
+
 .fm_item {
     color: #757575;
 }
@@ -27582,6 +27660,17 @@ a {
 .inline_item_blank {
     color: #618ec3;
     border-bottom: 1px solid #0e1113;
+}
+
+@media (max-width: 319px) {
+    .header__back {
+        background-color: #4776ae;
+    }
+
+    .MediaRow__firstLine,  .r .cp_attached_post .medias_link_title,  .r .cp_attached_post .mlt_no_photo .mlt_title,  .r .e .medias_link_title,  .r .e .mlt_no_photo .mlt_title,  .r .wall_item .medias_link_title,  .r .wall_item .mlt_no_photo .mlt_title {
+        color: #ffffff;
+    }
+
 }
 
 .message_item_cont {
@@ -29333,6 +29422,22 @@ div.pm_item .pm_counter {
 }
 
 @media (max-width: 881px) {
+    .vk__page_redesign,  .vk__page_redesign .basis__content {
+        background: #0e1113!important;
+    }
+
+    .vk__page-musicSubscription {
+        background: #000000!important;
+    }
+
+    .h .mhi_back:before {
+        background-color: #4776ae;
+    }
+
+    .h ._hover .mhb_back:hover .mhi_back:before,  .h ._touch .mhb_back.active .mhi_back:before,  .h ._touch .mhb_back.hover .mhi_back:before {
+        background-color: #5282b8;
+    }
+
     .OfflinePage__main {
         background: #0e1113;
     }
@@ -30199,6 +30304,36 @@ a.Pad__corner, a.Popup__headerCorner {
     background: #000000;
 }
 
+@media screen and (min-width: 882px) {
+    .messagesActions {
+        border-left: 1px solid #18191a;
+        border-right: 1px solid #18191a;
+    }
+
+    #l .mfoot {
+        border-top: 1px solid #66748728;
+    }
+
+    .qs_opened #l .m_search_items .al_loading,  .qs_opened #l .m_search_items .simple_item {
+        background-color: #000000;
+    }
+
+    #l .main_menu,  #l .panel,  #l .pcont,  body {
+        background-color: #0e1113;
+    }
+
+    .notify_item {
+        -webkit-box-shadow: 0 1px 2px 0 #222830;
+        -moz-box-shadow: 0 1px 2px 0 #222830;
+        box-shadow: 0 1px 2px 0 #222830;
+    }
+
+    ._hfixed._lm #m .mhead,  ._hfixed._lm.lm_opened #m .mhead,  ._lm #m .mhead,  ._lm.lm_opened #m .mhead {
+        background-color: #0e1113;
+    }
+
+}
+
 .audioPlaylist__footer {
     color: #666a6f;
 }
@@ -30288,6 +30423,35 @@ a.Pad__corner, a.Popup__headerCorner {
 }
 
 @media screen and (min-width: 320px) {
+    .audioPlaylist .wi_actions {
+        border: 1px solid #1c1e20;
+    }
+
+    .r .ai_menu.wi_actions {
+        border: 1px solid #282828;
+    }
+
+    .wi_actions {
+        background-color: #000000;
+        border-top: 1px solid #282828;
+        border-bottom: 1px solid #282828;
+        -webkit-box-shadow: 0 1px 4px #ffffff26;
+        -moz-box-shadow: 0 1px 4px #ffffff26;
+        box-shadow: 0 1px 4px #ffffff26;
+    }
+
+    .wall_item .medias_link_icon {
+        background-color: #141414;
+    }
+
+    .wall_item .medias_link_title,  .wall_item .medias_link_title a {
+        color: #ffffff;
+    }
+
+    .h ._hfixed #l .mhead {
+        border-color: #4776ae;
+    }
+
     ._hfixed #l {
         background: #0e1113;
     }
@@ -30721,6 +30885,22 @@ a.Pad__corner, a.Popup__headerCorner {
 }
 
 @media screen and (max-width: 881px) {
+    .groupCover-vk_animationYes.groupCover-vk_animationStep .head_search {
+        background: #597ba2;
+    }
+
+    .h.groupCover-vk_animationYes.groupCover-vk_animationStep .head_search {
+        background: #4776ae!important;
+    }
+
+    .groupCover-vk_animationYes .groupCover__dimmer {
+        background: #597ba2;
+    }
+
+    .h.groupCover-vk_animationYes .groupCover__dimmer {
+        background: #4776ae;
+    }
+
     .h.groupCover-vk_animationYes.groupCover-vk_animationStep .head_search,  .h.groupCover-vk_animationYes.groupCover-vk_animationStep .groupCover__dimmer {
         background: #4776ae;
     }
@@ -31889,6 +32069,10 @@ a .appWidget__tiles_title {
 }
 
 @supports ((-webkit-transform: scale(0.5)) or (-moz-transform: scale(0.5)) or (-ms-transform: scale(0.5)) or (-o-transform: scale(0.5)) or (transform: scale(0.5))) {
+    .Friends .Friends__item_request:after {
+        border-bottom: 1px solid #262728;
+    }
+
     .VotingBcg_type_default:before {
         border: 1px solid #292b2e;
     }
@@ -35168,6 +35352,13 @@ body.apps_settingsPageBody .basis__content {
     background-color: #5282b8;
 }
 
+@media screen and (min-width: 480px) {
+    .wi_actions {
+        border: 1px solid #282828;
+    }
+
+}
+
 ._ios .app_page_wrap .app_header_wrap {
     background-color: #070707;
 }
@@ -35355,6 +35546,13 @@ hr {
 
 .wk_doc .a {
     color: #85b1d3;
+}
+
+@media screen and (min-width: 620px) {
+    body {
+        background: #0e1113;
+    }
+
 }
 
 @media screen and (min-width: 768px) {
