@@ -25387,6 +25387,11 @@ div[style^="background-image: url('/images/deactivated_"][style$=".png?ava=1');"
     z-index: 1;
 }
 
+/* “no community avatar photo” image made dark */
+div[style^="background-image: url('/images/community_"][style$=".png?ava=1');"] {
+    filter: invert(100%) hue-rotate(180deg);
+}
+
 
 /* “no dialog photo” image made dark */
 img[src="https://vk.com/images/icons/im_multichat_50.png"] {
