@@ -35,6 +35,7 @@ FILES: List[str] = [
     'module',
     'mrtarg',
     'notifier',
+    'ny_2020',
     'oauth_popup',
     'owner_photo',
     'page',
