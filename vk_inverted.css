@@ -26235,8 +26235,15 @@ div[style="background-image:url(/images/lnkouter.png)"] {
 
 
 /* restore default album thumbnail style, with dark shadow */
-.page_album_title, .photos_container_albums .photos_album_title_wrap {
+.page_album_title, .photos_container_albums .photos_album_title_wrap,
+.photos_container_albums .photos_album_description {
     color: #fff;
+}
+
+
+/* fix photo album edit icon */
+.photos_edit_actions .icon {
+	filter: invert(100%) hue-rotate(180deg);
 }
 
 
@@ -26376,6 +26383,12 @@ div[style="background-color: rgb(255, 255, 255);"] {
     background-color: #221f1b !important;
     box-shadow: 0 0 0.5em 0.5em #221f1b;
     transition: background-color 1s ease, box-shadow 1s ease;
+}
+
+
+/* add icons fix */
+.TextPanelButton__icon {
+	filter: invert(100%) hue-rotate(180deg);
 }
 
 
