@@ -143,6 +143,7 @@ input.text.ts_input:focus {
 .page_gif_share_icon, .page_gif_add_icon,
 .profile_gift_icon,
 .mention_tt_subscr_icon, .wk_subscribe_icon,
+.article_layer__subscribe_icon,
 .settings_narrow_row input[type="checkbox"]:not(:checked) + label::before,
 .fc_tab_head a .chats_sp, .fc_tab_head a:hover,
 .mv_subscribe_block #mv_subscribe_btn::before {
