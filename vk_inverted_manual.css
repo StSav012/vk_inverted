@@ -200,7 +200,8 @@ a[style^="background-image: url('/images/camera_"][style$=".png?ava=1');"],
 div[style^="background-image: url('/images/camera_"][style$=".png?ava=1')"],
 div[style^="background-image: url('/images/camera_"][style$=".png?ava=1');"],
 div[style^="background-image: url('/images/deactivated_"][style$=".png?ava=1')"]
-div[style^="background-image: url('/images/deactivated_"][style$=".png?ava=1');"] {
+div[style^="background-image: url('/images/deactivated_"][style$=".png?ava=1');"],
+.wall_module .reply.reply_deleted .reply_img {
     filter: invert(100%) hue-rotate(180deg);
 }
 
