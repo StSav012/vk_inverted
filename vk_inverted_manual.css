@@ -1,37 +1,9 @@
-#page_header_cont .back {
-    background-color: #181B1F;
-    border-bottom-color: #181B1F;
-}
+/*  manual part */
 
-
-/* search field in the header */
+/* header search left border fix */
 input.text.ts_input {
-    background-color: #282B2F;
-    background-position-y: 50%;
-    color: #829fc8;
-}
-
-input.text.ts_input:focus {
-    background-color: #282B2F;
-    color: #829fc8;
-}
-
-.ts_wrap .input_back_content {
-    color: #829fc8;
-}
-
-
-/* audio player button in the header */
-.top_audio_player .top_audio_player_title, .top_profile_link .top_profile_name {
-    color: #829fc8;
-}
-
-.top_audio_player:hover, .top_nav_link:hover, .top_nav_btn:hover, .top_nav_btn.active, .top_audio_play__button:hover, .top_audio_play__button:hover::before, .top_nav_link.active {
-    background-color: #282B2F;
-}
-
-.top_audio_play__button::before, .top_audio_play__button {
-    background-color: #1e3c5f;
+	border: 0;
+	border-left: 8px solid transparent;
 }
 
 
@@ -39,12 +11,6 @@ input.text.ts_input:focus {
 .audio_pl_edit_box .ape_add_audios_btn::after, .audio_pl_edit_box .ape_add_pl_audios_btn::after {
 	background-repeat: no-repeat;
 	background-position: 50%;
-}
-
-
-/* notifications count */
-.top_nav_btn:hover .top_notify_count {
-    border-color: #1e3c5f;
 }
 
 
@@ -291,64 +257,6 @@ div[style="background-image:url(/images/lnkouter.png)"] {
 }
 
 
-/* restore default colors for overlays in the right bottom corner of profile pictures */
-/*
-.feedback_publish_row .feedback_photo_icon {
-    background-color: #ffa000;
-}
-
-.feedback_like_row .feedback_photo_icon {
-    background-color: #e64646;
-}
-
-.feedback_birthday_gift_row .feedback_photo_icon {
-    background-color: #e64646;
-}
-
-.feedback_comment_unify_row .feedback_photo_icon {
-    background-color: #4bb34b;
-}
-
-.feedback_live_row .feedback_photo_icon {
-    background-color: #e64646;
-}
-
-.online::after, .chat_tab_imgcont.online::after, .fc_clist_online::before, .layers_shown .chat_tab_imgcont.online::after {
-    background-color: #8ac176;
-}
-
-.top_notify_count {
-    border-color: #181B1F;
-    color: #fff;
-    background-color: #ff734c;
-}
-
-.like_btn.like.active .like_button_count {
-    color: #cc2939;
-}
-
-.chat_tab_counter {
-    background-color: #e63917;
-}
-
-.settings_separated_row_iconed.icon_type_birthday::before, .settings_separated_row_iconed.icon_type_event::before, .settings_separated_row_iconed.icon_type_interesting::before, .settings_separated_row_iconed.icon_type_like::before, .settings_separated_row_iconed.icon_type_live::before, .settings_separated_row_iconed.icon_type_podcast::before {
-    background-color: #e64646;
-}
-
-.settings_separated_row_iconed.icon_type_comment::before, .settings_separated_row_iconed.icon_type_invite_app::before, .settings_separated_row_iconed.icon_type_message::before, .settings_separated_row_iconed.icon_type_photo_tag::before, .settings_separated_row_iconed.icon_type_repost::before, .settings_separated_row_iconed.icon_type_voting::before {
-    background-color: #4bb34b;
-}
-
-.settings_separated_row_iconed.icon_type_content_achievements::before, .settings_separated_row_iconed.icon_type_discussions::before, .settings_separated_row_iconed.icon_type_follow::before, .settings_separated_row_iconed.icon_type_friend_found::before, .settings_separated_row_iconed.icon_type_invite_group::before, .settings_separated_row_iconed.icon_type_mention::before, .settings_separated_row_iconed.icon_type_related_events::before, .settings_separated_row_iconed.icon_type_wall::before {
-    background-color: #5c9ce6;
-}
-
-.settings_separated_row_iconed.icon_type_bookmarks::before, .settings_separated_row_iconed.icon_type_gift::before, .settings_separated_row_iconed.icon_type_new_post::before {
-    background-color: #ffa000;
-}
-*/
-
-
 /* change stories label color for better visibility */
 .story_feed_new_item.stories_feed_preview_item .stories_feed_preview_author .stories_feed_preview_author_name {
     color: #61798e;
@@ -430,13 +338,6 @@ input.focused {
     -moz-box-shadow: 0px 2px 10px #ffffff26;
     box-shadow: 0px 2px 10px #ffffff26;
 }
-
-
-/* hardcoded fill colors in svg */
-/*[fill="#FFF"], [fill="#fff"] {
-    fill: #000 !important;
-}
-*/
 
 
 /* icons at oauth.vk.com */
