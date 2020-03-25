@@ -26005,6 +26005,7 @@ span#wk_posts_reach_tooltip_link {
 input.text.ts_input {
 	border: 0;
 	border-left: 8px solid transparent;
+	background-position: left 8px;
 }
 
 

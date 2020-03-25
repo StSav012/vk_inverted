@@ -2,7 +2,7 @@
 @name         Auto Dark VK
 @description  Mostly automatically created dark style for the desktop version of vk.com. Testing a new algorithm.
 @namespace    github.com/stsav012/vk_inverted
-@version      0.2.20200325161425
+@version      0.2.20200325173638
 @updateURL    https://github.com/StSav012/vk_inverted/raw/master/vk_inverted.user.css
 ==/UserStyle== */
 @-moz-document domain("vk.com") {
@@ -26012,6 +26012,7 @@ span#wk_posts_reach_tooltip_link {
 input.text.ts_input {
 	border: 0;
 	border-left: 8px solid transparent;
+	background-position: left 8px;
 }
 
 
