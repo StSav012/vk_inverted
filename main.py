@@ -83,8 +83,8 @@ FILES: List[str] = [
 ]
 
 MOBILE_FILES: List[str] = [
+    'variables',
     'common',
-    'variables'
 ]
 
 VK_ME_FILES: List[str] = [
@@ -92,6 +92,7 @@ VK_ME_FILES: List[str] = [
 ]
 
 VK_APPS_FILES: List[str] = [
+    # https://vk.com/covid19
     'https://prod-app7362610-94e6b785785f.pages.vk-apps.com/static/css/5.f639b753.chunk.css',
     'https://prod-app7362610-94e6b785785f.pages.vk-apps.com/static/css/main.28d79a88.chunk.css',
     # https://vk.com/home
@@ -101,7 +102,7 @@ VK_APPS_FILES: List[str] = [
 VK_FORMS_FILES: List[str] = [
     # https://vk.com/stayhome
     'https://stayathome.w83.vkforms.ru/app/static/css/5.5f0214b7.chunk.css',
-    'https://stayathome.w83.vkforms.ru/app/static/css/main.9530138d.chunk.css'
+    'https://stayathome.w83.vkforms.ru/app/static/css/main.9530138d.chunk.css',
 ]
 
 OVERWRITE_FILES: bool = True
