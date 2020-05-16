@@ -134,7 +134,7 @@ out_lines: List[str] = [f'''\
 @version      0.3.{time.strftime('%Y%m%d%H%M%S')}
 @updateURL    https://github.com/StSav012/vk_inverted/raw/master/vk_inverted.user.css
 ==/UserStyle== */''']
-for path in ('css', 'css/al', 'css/api', 'css/landings', 'css/pages'):
+for path in ('css/pages', 'css/landings', 'css/api', 'css/al', 'css', ):
     if not os.path.exists(path):
         d_path = ''
         for d in path.split('/'):
