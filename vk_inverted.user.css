@@ -2,7 +2,7 @@
 @name         Auto Dark VK
 @description  Mostly automatically created dark style for the desktop version of vk.com. Testing a new algorithm.
 @namespace    github.com/stsav012/vk_inverted
-@version      0.3.20200516100031
+@version      0.3.20200516100553
 @updateURL    https://github.com/StSav012/vk_inverted/raw/master/vk_inverted.user.css
 ==/UserStyle== */
 @-moz-document domain("vk.com") {
@@ -31606,7 +31606,6 @@ html {
 
 .flat_button {
     padding: var(--flat-button-padding-top) var(--flat-button-padding-side) var(--flat-button-padding-bottom);
-    font-size: var(--flat-button-font-size);
     line-height: var(--flat-button-line-height);
     background-color: var(--flat-button-blue-bgcolor);
     color: var(--flat-button-blue-color);
@@ -31739,7 +31738,6 @@ html {
 
 .box_title {
     padding-left: var(--boxes-box-body-lr-padding);
-    font-size: var(--boxes-box-title-font-size);
     height: var(--boxes-box-title-height);
     line-height: var(--boxes-box-title-line-height);
 }
@@ -31877,10 +31875,6 @@ html,body {
     background-color: #000000;
 }
 
-body,input,textarea {
-    font-family: var(--defaultfontfamily), Armenian", "Noto Sans Bengali", "Noto Sans Cherokee", "Noto Sans Devanagari", "Noto Sans Ethiopic", "Noto Sans Georgian", "Noto Sans Hebrew", "Noto Sans Kannada", "Noto Sans Khmer", "Noto Sans Lao", "Noto Sans Osmanya", "Noto Sans Tamil", "Noto Sans Telugu", "Noto Sans Thai" "Noto Sans;
-}
-
 a {
     color: var(--pagelinkcolor);
 }
@@ -31903,10 +31897,6 @@ a {
     background-color: #000000;
     padding-bottom: var(--footerheight);
     padding-top: var(--pagenavigationheight);
-}
-
-.PageTitle {
-    font-family: var(--titlefontfamily), Armenian", "Noto Sans Bengali", "Noto Sans Cherokee", "Noto Sans Devanagari", "Noto Sans Ethiopic", "Noto Sans Georgian", "Noto Sans Hebrew", "Noto Sans Kannada", "Noto Sans Khmer", "Noto Sans Lao", "Noto Sans Osmanya", "Noto Sans Tamil", "Noto Sans Telugu", "Noto Sans Thai" "Noto Sans;
 }
 
 .PageTitle__middleText {
@@ -31935,7 +31925,6 @@ body.scrolled .PageNavigation_wrap {
 }
 
 .PageNavigation__profileAvatar--join {
-    font-family: var(--defaultfontfamily), Armenian", "Noto Sans Bengali", "Noto Sans Cherokee", "Noto Sans Devanagari", "Noto Sans Ethiopic", "Noto Sans Georgian", "Noto Sans Hebrew", "Noto Sans Kannada", "Noto Sans Khmer", "Noto Sans Lao", "Noto Sans Osmanya", "Noto Sans Tamil", "Noto Sans Telugu", "Noto Sans Thai" "Noto Sans;
     color: var(--pagelinkcolor);
 }
 
@@ -31963,8 +31952,6 @@ body.scrolled .PageNavigation_wrap {
 
 .NavBar {
     height: var(--pagenavigationheight);
-    font-family: var(--pagesnavigationfontfamily), Armenian", "Noto Sans Bengali", "Noto Sans Cherokee", "Noto Sans Devanagari", "Noto Sans Ethiopic", "Noto Sans Georgian", "Noto Sans Hebrew", "Noto Sans Kannada", "Noto Sans Khmer", "Noto Sans Lao", "Noto Sans Osmanya", "Noto Sans Tamil", "Noto Sans Telugu", "Noto Sans Thai" "Noto Sans;
-    font-size: var(--pagesnavigationfontsize);
 }
 
 .NavBar__link {
@@ -31981,7 +31968,6 @@ body.scrolled .PageNavigation_wrap {
 
 .PageNavigationBottom__lang {
     color: var(--bottomnavtextcolor);
-    font-family: var(--pagesnavigationfontfamily), Armenian", "Noto Sans Bengali", "Noto Sans Cherokee", "Noto Sans Devanagari", "Noto Sans Ethiopic", "Noto Sans Georgian", "Noto Sans Hebrew", "Noto Sans Kannada", "Noto Sans Khmer", "Noto Sans Lao", "Noto Sans Osmanya", "Noto Sans Tamil", "Noto Sans Telugu", "Noto Sans Thai" "Noto Sans;
 }
 
 .PageNavigationBottom__lang a {
@@ -32003,7 +31989,6 @@ body.scrolled .PageNavigation_wrap {
 }
 
 .BreadCrumb {
-    font-family: var(--defaultfontfamily), Armenian", "Noto Sans Bengali", "Noto Sans Cherokee", "Noto Sans Devanagari", "Noto Sans Ethiopic", "Noto Sans Georgian", "Noto Sans Hebrew", "Noto Sans Kannada", "Noto Sans Khmer", "Noto Sans Lao", "Noto Sans Osmanya", "Noto Sans Tamil", "Noto Sans Telugu", "Noto Sans Thai" "Noto Sans;
     color: var(--breadcrubmstextcolor);
 }
 
@@ -32014,10 +31999,6 @@ body.scrolled .PageNavigation_wrap {
 .PageSection {
     padding-bottom: var(--sectionpadding);
     padding-top: var(--sectionpadding);
-}
-
-.PageSectionTitle {
-    font-family: var(--titlefontfamily), Armenian", "Noto Sans Bengali", "Noto Sans Cherokee", "Noto Sans Devanagari", "Noto Sans Ethiopic", "Noto Sans Georgian", "Noto Sans Hebrew", "Noto Sans Kannada", "Noto Sans Khmer", "Noto Sans Lao", "Noto Sans Osmanya", "Noto Sans Tamil", "Noto Sans Telugu", "Noto Sans Thai" "Noto Sans;
 }
 
 .PageSection--gradient:before {
@@ -45580,10 +45561,6 @@ body[scheme=space_gray] {
     --dynamic_violet: #595472;
 }
 
-.Root--ios {
-    font-family: var(--font-ios);
-}
-
 .Root--ios .Root__view--hide-forward:after,.Root--ios .Root__view--show-back:after {
     background-color: #ffffff;
 }
@@ -45608,10 +45585,6 @@ body[scheme=space_gray] {
     animation: root-ios-animation-hide-back .6s var(--ios-easing);
 }
 
-.Root--android {
-    font-family: var(--font-android);
-}
-
 .Root--android .Root__view--show-forward {
     -webkit-animation: root-android-animation-show-forward .3s var(--android-easing);
     animation: root-android-animation-show-forward .3s var(--android-easing);
@@ -45620,10 +45593,6 @@ body[scheme=space_gray] {
 .Root--android .Root__view--hide-back {
     -webkit-animation: root-android-animation-hide-back .3s var(--android-easing);
     animation: root-android-animation-hide-back .3s var(--android-easing);
-}
-
-.View--ios {
-    font-family: var(--font-ios);
 }
 
 .View--ios.View--header .Panel__in {
@@ -45686,10 +45655,6 @@ body[scheme=space_gray] {
 .View--ios .View__panel--next .Panel__in:before {
     -webkit-animation: animation-ios-fade-out .6s var(--ios-easing);
     animation: animation-ios-fade-out .6s var(--ios-easing);
-}
-
-.View--android {
-    font-family: var(--font-android);
 }
 
 .View--android.View--header .Panel__in {
@@ -45820,7 +45785,6 @@ body[scheme=space_gray] {
 }
 
 .PanelHeader--ios .PanelHeader-content {
-    font-family: var(--font-tt);
     line-height: var(--panelheader_height_ios);
     transition: color .6s var(--ios-easing);
     color: #ffffff;
@@ -45838,7 +45802,6 @@ body[scheme=space_gray] {
 .PanelHeader--android .PanelHeader-content {
     line-height: var(--panelheader_height_android);
     height: var(--panelheader_height_android);
-    font-family: var(--font-tt);
     color: #ffffff;
     color: var(--header_text);
 }
@@ -45877,7 +45840,6 @@ body[scheme=space_gray] {
 }
 
 .PanelHeaderSimple--ios .PanelHeaderSimple__content {
-    font-family: var(--font-tt);
     line-height: var(--panelheader_height_ios);
     color: #ffffff;
     color: var(--header_text);
@@ -45897,35 +45859,18 @@ body[scheme=space_gray] {
     padding-top: var(--safe-area-inset-top);
 }
 
-.PanelHeaderSimple--android .PanelHeaderSimple__content {
-    font-family: var(--font-tt);
-}
-
 .PanelHeaderButton--android.Tappable--active {
     background-color: #ffffff14;
     background-color: var(--background_highlighted);
 }
 
-.PanelHeaderContent__status~.PanelHeaderContent__children .PanelHeaderContent__children-in {
-    font-family: var(--font-common);
-}
-
 .PanelHeaderContent__children-in {
     line-height: var(--panelheader_height_ios);
-    font-family: var(--font-tt);
 }
 
 .PanelHeaderContent__aside {
     color: #1f6ac0;
     color: var(--header_tint);
-}
-
-.PanelHeaderContent--ios {
-    font-family: var(--font-ios);
-}
-
-.PanelHeaderContent--android {
-    font-family: var(--font-android);
 }
 
 .PanelHeaderContent--android .PanelHeaderContent__in.Tappable--active {
@@ -45944,14 +45889,6 @@ body[scheme=space_gray] {
 .PanelHeaderContext--android .List {
     background-color: #000000;
     background-color: var(--header_background);
-}
-
-.Epic--ios {
-    font-family: var(--font-ios);
-}
-
-.Epic--android {
-    font-family: var(--font-android);
 }
 
 .Tabbar {
@@ -46344,17 +46281,9 @@ body[scheme=space_gray] {
     color: var(--icon_secondary);
 }
 
-.ModalPageHeader--ios .ModalPageHeader__content-in {
-    font-family: var(--font-tt);
-}
-
 .ModalPageHeader--android .ModalPageHeader__dismiss {
     color: #525b66;
     color: var(--icon_secondary);
-}
-
-.ModalPageHeader--android .ModalPageHeader__content-in {
-    font-family: var(--font-tt);
 }
 
 .Tappable--ios.Tappable--active:not([disabled]):not(.TabsItem):not(.PanelHeaderButton):not(.Button):not(.PanelHeaderContent__in):not(.ActionSheetItem) {
@@ -46743,7 +46672,6 @@ body[scheme=space_gray] .Gradient--md-tint.Gradient--to-bottom {
 }
 
 .Search {
-    font-family: var(--font-common);
     background-color: #000000;
     background-color: var(--search_bar_background);
 }
@@ -46869,17 +46797,9 @@ body[scheme=space_gray] .Gradient--md-tint.Gradient--to-bottom {
     background-color: var(--header_background);
 }
 
-.Tabs--ios {
-    font-family: var(--font-ios);
-}
-
 .FixedLayout--ios.FixedLayout--bottom .Tabs:after {
     background-color: #000000;
     background-color: var(--background_content);
-}
-
-.Tabs--android {
-    font-family: var(--font-android);
 }
 
 .Tabs .TabsItem .Counter {
@@ -47301,7 +47221,6 @@ body[scheme=space_gray] .Gradient--md-tint.Gradient--to-bottom {
 
 body,div#root,html {
     -webkit-tap-highlight-color: transparent;
-    font-family: var(--font-common);
     color: #ffffff;
     color: var(--text_primary);
 }
@@ -49191,10 +49110,6 @@ body[scheme=space_gray] {
     --dynamic_violet: #595472;
 }
 
-.Root--ios {
-    font-family: var(--font-ios);
-}
-
 .Root--ios .Root__view--hide-forward:after,.Root--ios .Root__view--show-back:after {
     background-color: #ffffff;
 }
@@ -49219,10 +49134,6 @@ body[scheme=space_gray] {
     animation: root-ios-animation-hide-back .6s var(--ios-easing);
 }
 
-.Root--android {
-    font-family: var(--font-android);
-}
-
 .Root--android .Root__view--show-forward {
     -webkit-animation: root-android-animation-show-forward .3s var(--android-easing);
     animation: root-android-animation-show-forward .3s var(--android-easing);
@@ -49231,10 +49142,6 @@ body[scheme=space_gray] {
 .Root--android .Root__view--hide-back {
     -webkit-animation: root-android-animation-hide-back .3s var(--android-easing);
     animation: root-android-animation-hide-back .3s var(--android-easing);
-}
-
-.View--ios {
-    font-family: var(--font-ios);
 }
 
 .View--ios.View--header .Panel__in {
@@ -49297,10 +49204,6 @@ body[scheme=space_gray] {
 .View--ios .View__panel--next .Panel__in:before {
     -webkit-animation: animation-ios-fade-out .6s var(--ios-easing);
     animation: animation-ios-fade-out .6s var(--ios-easing);
-}
-
-.View--android {
-    font-family: var(--font-android);
 }
 
 .View--android.View--header .Panel__in {
@@ -49431,7 +49334,6 @@ body[scheme=space_gray] {
 }
 
 .PanelHeader--ios .PanelHeader-content {
-    font-family: var(--font-tt);
     line-height: var(--panelheader_height_ios);
     transition: color .6s var(--ios-easing);
     color: #ffffff;
@@ -49449,7 +49351,6 @@ body[scheme=space_gray] {
 .PanelHeader--android .PanelHeader-content {
     line-height: var(--panelheader_height_android);
     height: var(--panelheader_height_android);
-    font-family: var(--font-tt);
     color: #ffffff;
     color: var(--header_text);
 }
@@ -49488,7 +49389,6 @@ body[scheme=space_gray] {
 }
 
 .PanelHeaderSimple--ios .PanelHeaderSimple__content {
-    font-family: var(--font-tt);
     line-height: var(--panelheader_height_ios);
     color: #ffffff;
     color: var(--header_text);
@@ -49508,35 +49408,18 @@ body[scheme=space_gray] {
     padding-top: var(--safe-area-inset-top);
 }
 
-.PanelHeaderSimple--android .PanelHeaderSimple__content {
-    font-family: var(--font-tt);
-}
-
 .PanelHeaderButton--android.Tappable--active {
     background-color: #ffffff14;
     background-color: var(--background_highlighted);
 }
 
-.PanelHeaderContent__status~.PanelHeaderContent__children .PanelHeaderContent__children-in {
-    font-family: var(--font-common);
-}
-
 .PanelHeaderContent__children-in {
     line-height: var(--panelheader_height_ios);
-    font-family: var(--font-tt);
 }
 
 .PanelHeaderContent__aside {
     color: #1f6ac0;
     color: var(--header_tint);
-}
-
-.PanelHeaderContent--ios {
-    font-family: var(--font-ios);
-}
-
-.PanelHeaderContent--android {
-    font-family: var(--font-android);
 }
 
 .PanelHeaderContent--android .PanelHeaderContent__in.Tappable--active {
@@ -49555,14 +49438,6 @@ body[scheme=space_gray] {
 .PanelHeaderContext--android .List {
     background-color: #000000;
     background-color: var(--header_background);
-}
-
-.Epic--ios {
-    font-family: var(--font-ios);
-}
-
-.Epic--android {
-    font-family: var(--font-android);
 }
 
 .Tabbar {
@@ -49955,17 +49830,9 @@ body[scheme=space_gray] {
     color: var(--icon_secondary);
 }
 
-.ModalPageHeader--ios .ModalPageHeader__content-in {
-    font-family: var(--font-tt);
-}
-
 .ModalPageHeader--android .ModalPageHeader__dismiss {
     color: #525b66;
     color: var(--icon_secondary);
-}
-
-.ModalPageHeader--android .ModalPageHeader__content-in {
-    font-family: var(--font-tt);
 }
 
 .Tappable--ios.Tappable--active:not([disabled]):not(.TabsItem):not(.PanelHeaderButton):not(.Button):not(.PanelHeaderContent__in):not(.ActionSheetItem) {
@@ -50354,7 +50221,6 @@ body[scheme=space_gray] .Gradient--md-tint.Gradient--to-bottom {
 }
 
 .Search {
-    font-family: var(--font-common);
     background-color: #000000;
     background-color: var(--search_bar_background);
 }
@@ -50480,17 +50346,9 @@ body[scheme=space_gray] .Gradient--md-tint.Gradient--to-bottom {
     background-color: var(--header_background);
 }
 
-.Tabs--ios {
-    font-family: var(--font-ios);
-}
-
 .FixedLayout--ios.FixedLayout--bottom .Tabs:after {
     background-color: #000000;
     background-color: var(--background_content);
-}
-
-.Tabs--android {
-    font-family: var(--font-android);
 }
 
 .Tabs .TabsItem .Counter {
@@ -50912,7 +50770,6 @@ body[scheme=space_gray] .Gradient--md-tint.Gradient--to-bottom {
 
 body,div#root,html {
     -webkit-tap-highlight-color: transparent;
-    font-family: var(--font-common);
     color: #ffffff;
     color: var(--text_primary);
 }
