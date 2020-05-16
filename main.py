@@ -84,6 +84,7 @@ FILES: List[str] = [
 
 MOBILE_FILES: List[str] = [
     'common',
+    'variables'
 ]
 
 VK_ME_FILES: List[str] = [
@@ -91,7 +92,7 @@ VK_ME_FILES: List[str] = [
 ]
 
 VK_APPS_FILES: List[str] = [
-    'https://prod-app7362610-94b36b33bcd1.pages.vk-apps.com/static/css/5.f639b753.chunk.css',
+    'https://prod-app7362610-94e6b785785f.pages.vk-apps.com/static/css/5.f639b753.chunk.css',
     'https://prod-app7362610-94e6b785785f.pages.vk-apps.com/static/css/main.28d79a88.chunk.css',
     # https://vk.com/home
     'https://stayhome.juice.vk-apps.com/_next/static/css/391e853485aaddf3ed73.css',
@@ -136,18 +137,19 @@ for path in ('css', 'css/al', 'css/api', 'css/landings', 'css/pages'):
                 os.mkdir(d_path)
             d_path += '/'
     for fn in FILES:
-        if OVERWRITE_FILES and os.path.exists(f'{path}/{fn}.css'):
-            os.remove(f'{path}/{fn}.css')
-        if not os.path.exists(f'{path}/{fn}.css'):
+        filename: str = f'{path}/{fn}.css'
+        if OVERWRITE_FILES and os.path.exists(filename):
+            os.remove(filename)
+        if not os.path.exists(filename):
             try:
-                urllib.request.urlretrieve(f'https://vk.com/{path}/{fn}.css', f'{path}/{fn}.css')
+                urllib.request.urlretrieve(f'https://vk.com/{filename}', filename)
             except urllib.error.HTTPError:
                 continue
-        if not os.path.exists(f'{path}/{fn}.css'):
-            print(f'failed to get {path}/{fn}.css')
+        if not os.path.exists(filename):
+            print(f'failed to get {filename}')
             continue
-        with open(f'{path}/{fn}.css', 'r') as fin:
-            print(f'processing {path}/{fn}.css', end=' ' * (20 - len(fn)), flush=True)
+        with open(filename, 'r') as fin:
+            print(f'processing {filename}', end=' ' * (20 - len(fn)), flush=True)
             inverted_css: str = invert(''.join(fin.readlines()), url_root='https://vk.com')
             # remove properties starting from asterisk unsupported by Stylus add-on
             # remove lines containing “progid:DXImageTransform.Microsoft” unsupported by Stylus add-on
@@ -158,7 +160,7 @@ for path in ('css', 'css/al', 'css/api', 'css/landings', 'css/pages'):
             if not inverted_css.strip('\n'):
                 continue
             out_lines.append('@-moz-document domain("vk.com") {\n')
-            section_css: str = f'/* auto generated from {path}/{fn}.css */\n' + inverted_css
+            section_css: str = f'/* auto generated from {filename} */\n' + inverted_css
             out_dict['sections'].append({'code': section_css, 'domains': ['vk.com']})
             out_lines.append(section_css)
             out_lines.append('}\n')
@@ -176,19 +178,22 @@ if os.path.exists(fn):
 
 for fn in MOBILE_FILES:
     # FIXME: getting wrong file
-    # if not os.path.exists(f'm.{fn}.css'):
-    #     try:
-    #         urllib.request.urlretrieve(f'https://m.vk.com/css/mobile/{fn}.css', f'm.{fn}.css')
-    #     except urllib.error.HTTPError:
-    #         pass
-    if not os.path.exists(f'm.{fn}.css'):
+    filename: str = f'm.{fn}.css'
+    if OVERWRITE_FILES and os.path.exists(filename):
+        os.remove(filename)
+    if not os.path.exists(filename):
+        try:
+            urllib.request.urlretrieve(f'https://m.vk.com/css/mobile/{fn}.css', filename)
+        except urllib.error.HTTPError:
+            pass
+    if not os.path.exists(filename):
         print(f'failed to the get mobile version of {fn}.css')
         continue
-    with open(f'm.{fn}.css', 'r') as fin:
+    with open(filename, 'r') as fin:
         inverted_css: str = invert(''.join(fin.readlines()), url_root='https://m.vk.com')
         if not inverted_css:
             continue
-        # remove properties starting from asterix unsupported by Stylus add-on
+        # remove properties starting from asterisk unsupported by Stylus add-on
         inverted_css = '\n'.join(filter(lambda l: not l.strip().startswith('*'), inverted_css.splitlines()))
         out_lines.append('@-moz-document domain("m.vk.com") {\n')
         section_css: str = f'/* auto generated from the mobile version of {fn}.css */\n' + inverted_css
@@ -197,22 +202,25 @@ for fn in MOBILE_FILES:
         out_lines.append('}\n')
 
 for fn in VK_ME_FILES:
-    if not os.path.exists(f'me.{fn}.css'):
+    filename: str = f'me.{fn}.css'
+    if OVERWRITE_FILES and os.path.exists(filename):
+        os.remove(filename)
+    if not os.path.exists(filename):
         try:
-            urllib.request.urlretrieve(f'https://vk.me/css/al/{fn}.css', f'me.{fn}.css')
+            urllib.request.urlretrieve(f'https://vk.me/css/al/{fn}.css', filename)
         except urllib.error.HTTPError:
             pass
-    if not os.path.exists(f'me.{fn}.css'):
+    if not os.path.exists(filename):
         print(f'failed to {fn}.css from vk.me')
         continue
-    with open(f'me.{fn}.css', 'r') as fin:
+    with open(filename, 'r') as fin:
         inverted_css: str = invert(''.join(fin.readlines()), url_root='https://vk.me')
         if not inverted_css:
             continue
-        # remove properties starting from asterix unsupported by Stylus add-on
+        # remove properties starting from asterisk unsupported by Stylus add-on
         inverted_css = '\n'.join(filter(lambda l: not l.strip().startswith('*'), inverted_css.splitlines()))
         out_lines.append('@-moz-document domain("vk.me") {\n')
-        section_css: str = f'/* auto generated from the {fn}.css of vk.me*/\n' + inverted_css
+        section_css: str = f'/* auto generated from the {fn}.css from vk.me */\n' + inverted_css
         out_dict['sections'].append({'code': section_css, 'domains': ['vk.me']})
         out_lines.append(section_css)
         out_lines.append('}\n')
@@ -220,25 +228,27 @@ for fn in VK_ME_FILES:
 for path in VK_APPS_FILES:
     fn: str = path.rsplit('/', maxsplit=1)[-1]
     url_root: str = '/'.join(path.split('/')[:3]) + '/'
-    if not os.path.exists(f'app.{fn.split(".")[0]}.css'):
+    filename: str = f'app.{fn.split(".")[0]}.css'
+    if OVERWRITE_FILES and os.path.exists(filename):
+        os.remove(filename)
+    if not os.path.exists(filename):
         try:
-            urllib.request.urlretrieve(path,
-                                       f'app.{fn.split(".")[0]}.css')
+            urllib.request.urlretrieve(path, filename)
         except urllib.error.HTTPError:
             pass
-    if not os.path.exists(f'app.{fn.split(".")[0]}.css'):
+    if not os.path.exists(filename):
         print(f'failed to get {path} from vk-apps.com')
         continue
-    with open(f'app.{fn.split(".")[0]}.css', 'r') as fin:
+    with open(filename, 'r') as fin:
         inverted_css: str = invert(''.join(fin.readlines()),
                                    url_root=url_root)
         if not inverted_css:
             continue
-        # remove properties starting from asterix unsupported by Stylus add-on
+        # remove properties starting from asterisk unsupported by Stylus add-on
         inverted_css = '\n'.join(filter(lambda l: not l.strip().startswith('*'), inverted_css.splitlines()))
         out_lines.append('@-moz-document domain("vk-apps.com") {\n')
         section_css: str = f'/* auto generated from the {fn}.css ' \
-                           f'of {url_root} */\n' + inverted_css
+                           f'from {url_root} */\n' + inverted_css
         out_dict['sections'].append({'code': section_css, 'domains': ['vk-apps.com']})
         out_lines.append(section_css)
         out_lines.append('}\n')
@@ -246,21 +256,23 @@ for path in VK_APPS_FILES:
 for path in VK_FORMS_FILES:
     fn: str = path.rsplit('/', maxsplit=1)[-1]
     url_root: str = '/'.join(path.split('/')[:4]) + '/'
-    if not os.path.exists(f'forms.{fn.split(".")[0]}.css'):
+    filename: str = f'forms.{fn.split(".")[0]}.css'
+    if OVERWRITE_FILES and os.path.exists(filename):
+        os.remove(filename)
+    if not os.path.exists(filename):
         try:
-            urllib.request.urlretrieve(path,
-                                       f'forms.{fn.split(".")[0]}.css')
+            urllib.request.urlretrieve(path, filename)
         except urllib.error.HTTPError:
             pass
-    if not os.path.exists(f'forms.{fn.split(".")[0]}.css'):
+    if not os.path.exists(filename):
         print(f'failed to get {path} from vkforms.ru')
         continue
-    with open(f'forms.{fn.split(".")[0]}.css', 'r') as fin:
+    with open(filename, 'r') as fin:
         inverted_css: str = invert(''.join(fin.readlines()),
                                    url_root=url_root)
         if not inverted_css:
             continue
-        # remove properties starting from asterix unsupported by Stylus add-on
+        # remove properties starting from asterisk unsupported by Stylus add-on
         inverted_css = '\n'.join(filter(lambda l: not l.strip().startswith('*'), inverted_css.splitlines()))
         out_lines.append('@-moz-document domain("vkforms.ru") {\n')
         section_css: str = f'/* auto generated from the {fn}.css ' \
