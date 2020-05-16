@@ -85,6 +85,11 @@ FILES: List[str] = [
 MOBILE_FILES: List[str] = [
     'variables',
     'common',
+    'apps',
+    'mail',
+    'oauth_base',
+    'photo',
+    'video',
 ]
 
 VK_ME_FILES: List[str] = [
@@ -177,21 +182,30 @@ if os.path.exists(fn):
         out_lines.append(section_css)
         out_lines.append('}\n')
 
+path: str = 'css/mobile'
+if not os.path.exists(path):
+    d_path = ''
+    for d in path.split('/'):
+        d_path += d
+        if not os.path.exists(d_path):
+            os.mkdir(d_path)
+        d_path += '/'
 for fn in MOBILE_FILES:
-    # FIXME: getting wrong file
-    filename: str = f'm.{fn}.css'
+    filename: str = f'{path}/{fn}.css'
     if OVERWRITE_FILES and os.path.exists(filename):
         os.remove(filename)
     if not os.path.exists(filename):
         try:
-            urllib.request.urlretrieve(f'https://m.vk.com/css/mobile/{fn}.css', filename)
+            urllib.request.urlretrieve(f'https://m.vk.com/{filename}', filename)
         except urllib.error.HTTPError:
             pass
     if not os.path.exists(filename):
         print(f'failed to the get mobile version of {fn}.css')
         continue
     with open(filename, 'r') as fin:
+        print(f'processing {filename}', end=' ' * (20 - len(fn)), flush=True)
         inverted_css: str = invert(''.join(fin.readlines()), url_root='https://m.vk.com')
+        print(f'{inverted_css.count("}")} rules')
         if not inverted_css:
             continue
         # remove properties starting from asterisk unsupported by Stylus add-on
