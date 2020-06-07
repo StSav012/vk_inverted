@@ -276,7 +276,7 @@ div[style="background-image:url(/images/lnkouter.png)"] {
 
 /* add a shadow for a graffiti to make the dark parts visible */
 .page_media_graffiti_doc > img {
-    filter: drop-shadow(0 0 0.75rem whitesmoke);
+    filter: drop-shadow(0 0 0.75rem WhiteSmoke);
 }
 
 
@@ -442,6 +442,12 @@ div.reply_text > div[id][style] {
 
 .wall_post_cont {
     transition: background-color 1s ease, box-shadow 1s ease;
+}
+
+
+/* comment field background color is unnecessary */
+.wall_module .reply_form {
+	background-color: unset;
 }
 
 

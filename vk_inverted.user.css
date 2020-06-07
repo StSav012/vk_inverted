@@ -2,7 +2,7 @@
 @name         Auto Dark VK (dev)
 @description  Mostly automatically created dark style for the desktop version of vk.com. Testing a new algorithm.
 @namespace    github.com/stsav012/vk_inverted
-@version      0.3.20200607122012
+@version      0.3.20200607124140
 @updateURL    https://github.com/StSav012/vk_inverted/raw/dev/vk_inverted.user.css
 ==/UserStyle== */
 @-moz-document domain("vk.com") {
@@ -37907,11 +37907,6 @@ a.wk_video:hover img {
 /*  manual part */
 /*  manual part */
 
-:root{
-    --white: #0000;
-}
-
-
 /* header search left border fix */
 input.text.ts_input {
 	border-left-color: transparent;
@@ -38188,7 +38183,7 @@ div[style="background-image:url(/images/lnkouter.png)"] {
 
 /* add a shadow for a graffiti to make the dark parts visible */
 .page_media_graffiti_doc > img {
-    filter: drop-shadow(0 0 0.75rem whitesmoke);
+    filter: drop-shadow(0 0 0.75rem WhiteSmoke);
 }
 
 
@@ -38354,6 +38349,12 @@ div.reply_text > div[id][style] {
 
 .wall_post_cont {
     transition: background-color 1s ease, box-shadow 1s ease;
+}
+
+
+/* comment field background color is unnecessary */
+.wall_module .reply_form {
+	background-color: unset;
 }
 
 
