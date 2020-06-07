@@ -1,13 +1,14 @@
 #!/usr/bin/python3.7
 # -*- coding: utf-8 -*-
-from typing import List, Dict, Any
-import urllib.request
-import urllib.error
-import os.path
-from css_color_inverter import invert
-import time
-import json
 import hashlib
+import json
+import os.path
+import time
+import urllib.error
+import urllib.request
+from typing import List, Dict, Any, Final
+
+from css_color_inverter import invert
 
 FILES: List[str] = [
     'addresses',
@@ -98,20 +99,23 @@ VK_ME_FILES: List[str] = [
 
 VK_APPS_FILES: List[str] = [
     # https://vk.com/covid19
-    'https://prod-app7362610-94e6b785785f.pages.vk-apps.com/static/css/5.f639b753.chunk.css',
-    'https://prod-app7362610-94e6b785785f.pages.vk-apps.com/static/css/main.28d79a88.chunk.css',
+    'https://prod-app7362610-29fb8e8c3f65.pages.vk-apps.com/static/css/5.f639b753.chunk.css',
+    'https://prod-app7362610-29fb8e8c3f65.pages.vk-apps.com/static/css/main.5c3a01c8.chunk.css',
     # https://vk.com/home
-    'https://stayhome.juice.vk-apps.com/_next/static/css/391e853485aaddf3ed73.css',
+    'https://stayhome.production.vklanding.com/_next/static/css/25b9e58df5e514472871.css',
 ]
 
 VK_FORMS_FILES: List[str] = [
     # https://vk.com/stayhome
     'https://stayathome.w83.vkforms.ru/app/static/css/5.5f0214b7.chunk.css',
-    'https://stayathome.w83.vkforms.ru/app/static/css/main.9530138d.chunk.css',
+    'https://stayathome.w83.vkforms.ru/app/static/css/main.03c15dc9.chunk.css',
 ]
 
 OVERWRITE_FILES: bool = True
 LOCAL_ONLY: bool = False
+
+BRANCH: Final[str] = 'dev'
+NAME: Final[str] = f'Auto Dark VK ({BRANCH})' if BRANCH != 'master' else 'Auto Dark VK'
 
 
 def md5(string):
@@ -121,18 +125,18 @@ def md5(string):
 
 
 out_dict: Dict[str, Any] = {'enabled': True,
-                            'name': 'Auto Dark VK',
-                            'updateUrl': 'https://github.com/StSav012/vk_inverted/raw/master/vk_inverted.css.json',
-                            'md5Url': 'https://github.com/StSav012/vk_inverted/raw/master/vk_inverted.css.md5',
+                            'name': NAME,
+                            'updateUrl': f'https://github.com/StSav012/vk_inverted/raw/{BRANCH}/vk_inverted.css.json',
+                            'md5Url': f'https://github.com/StSav012/vk_inverted/raw/{BRANCH}/vk_inverted.css.md5',
                             'url': 'https://github.com/StSav012/vk_inverted',
                             'sections': []}
 out_lines: List[str] = [f'''\
 /* ==UserStyle==
-@name         Auto Dark VK
+@name         {NAME}
 @description  Mostly automatically created dark style for the desktop version of vk.com. Testing a new algorithm.
 @namespace    github.com/stsav012/vk_inverted
 @version      0.3.{time.strftime('%Y%m%d%H%M%S')}
-@updateURL    https://github.com/StSav012/vk_inverted/raw/master/vk_inverted.user.css
+@updateURL    https://github.com/StSav012/vk_inverted/raw/{BRANCH}/vk_inverted.user.css
 ==/UserStyle== */''']
 for path in ('css/pages', 'css/landings', 'css/api', 'css/al', 'css', ):
     if not os.path.exists(path):
