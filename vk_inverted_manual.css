@@ -1,10 +1,5 @@
 /*  manual part */
 
-:root{
-    --white: #0000;
-}
-
-
 /* header search left border fix */
 input.text.ts_input {
 	border-left-color: transparent;
