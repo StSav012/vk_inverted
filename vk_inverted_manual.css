@@ -247,6 +247,12 @@ div[style="background-image:url(/images/lnkouter.png)"] {
 }
 
 
+/* floating chats resize icon made dark */
+.chats_sp {
+	filter: invert(100%) hue-rotate(180deg);
+}
+
+
 /* change stories label background for better visibility */
 .story_feed_new_item.stories_feed_preview_item .stories_feed_preview_author .stories_feed_preview_author_name,
 .stories_feed_preview_item .stories_feed_preview_author .stories_feed_preview_author_name {
