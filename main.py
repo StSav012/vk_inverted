@@ -114,7 +114,7 @@ VK_FORMS_FILES: List[str] = [
 OVERWRITE_FILES: bool = True
 LOCAL_ONLY: bool = False
 
-BRANCH: Final[str] = 'dev'
+BRANCH: Final[str] = 'master'
 NAME: Final[str] = f'Auto Dark VK ({BRANCH})' if BRANCH != 'master' else 'Auto Dark VK'
 
 
