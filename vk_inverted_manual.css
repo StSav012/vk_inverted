@@ -452,7 +452,7 @@ div.reply_text > div[id][style] {
 
 
 /* comment field background color is unnecessary */
-.wall_module .reply_form {
+.wall_module .reply_form, .wall_module .reply_box, .wall_module .reply_fakebox_wrap {
 	background-color: unset;
 }
 
