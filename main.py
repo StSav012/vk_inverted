@@ -1,6 +1,5 @@
 #!/usr/bin/python3.7
 # -*- coding: utf-8 -*-
-import hashlib
 import json
 import os.path
 import time
@@ -119,6 +118,7 @@ NAME: Final[str] = f'Auto Dark VK ({BRANCH})' if BRANCH != 'master' else 'Auto D
 
 
 def md5(string):
+    import hashlib
     m = hashlib.md5()
     m.update(string.encode())
     return m.hexdigest()

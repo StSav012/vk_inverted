@@ -465,7 +465,7 @@ div.reply_text > div[id][style] {
 
 
 /* [class="selector_input selected"] fix */
-[style^="color: rgb(34, 34, 34);"] {
+[style^="color: rgb(34, 34, 34);"], [style$=" color: rgb(34, 34, 34);"] {
     color: #dddddd !important;
 }
 
@@ -481,4 +481,10 @@ div.reply_text > div[id][style] {
 
 .media_voting_bg_gradient .media_voting_option_text, .media_voting_bg_photo .media_voting_option_text, .media_voting_bg_tile .media_voting_option_text {
 	color: #fff;
+}
+
+
+/* no idea where it's from */
+#tickets_msg {
+	background-color: #181506 !important;
 }
