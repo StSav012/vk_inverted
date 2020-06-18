@@ -110,6 +110,11 @@ VK_FORMS_FILES: List[str] = [
     'https://stayathome.w83.vkforms.ru/app/static/css/main.03c15dc9.chunk.css',
 ]
 
+VK_CONNECT_FILES: List[str] = [
+    # https://connect.vk.com/account/
+    'https://connect.vk.com/account/static/bundle.0803443e.css',
+]
+
 OVERWRITE_FILES: bool = True
 LOCAL_ONLY: bool = False
 
@@ -158,9 +163,9 @@ for path in ('css/pages', 'css/landings', 'css/api', 'css/al', 'css', ):
         if not os.path.exists(filename):
             print(f'failed to get {filename}')
             continue
-        with open(filename, 'r') as fin:
+        with open(filename, 'r') as f_in:
             print(f'processing {filename}', end=' ' * (20 - len(fn)), flush=True)
-            inverted_css: str = invert(''.join(fin.readlines()), url_root='https://vk.com')
+            inverted_css: str = invert(''.join(f_in.readlines()), url_root='https://vk.com')
             # remove properties starting from asterisk unsupported by Stylus add-on
             # remove lines containing “progid:DXImageTransform.Microsoft” unsupported by Stylus add-on
             inverted_css = '\n'.join(filter(lambda l: (not l.strip().startswith('*')
@@ -177,9 +182,9 @@ for path in ('css/pages', 'css/landings', 'css/api', 'css/al', 'css', ):
 
 fn = 'vk_inverted_manual.css'
 if os.path.exists(fn):
-    with open(fn, 'r') as fin:
+    with open(fn, 'r') as f_in:
         out_lines.append('@-moz-document domain("vk.com") {\n')
-        manual_css = fin.readlines()
+        manual_css = f_in.readlines()
         section_css: str = f'/*  manual part */\n' +\
                            ''.join(manual_css)
         out_dict['sections'].append({'code': section_css, 'domains': ['vk.com']})
@@ -206,9 +211,9 @@ for fn in MOBILE_FILES:
     if not os.path.exists(filename):
         print(f'failed to the get mobile version of {fn}.css')
         continue
-    with open(filename, 'r') as fin:
+    with open(filename, 'r') as f_in:
         print(f'processing {filename}', end=' ' * (20 - len(fn)), flush=True)
-        inverted_css: str = invert(''.join(fin.readlines()), url_root='https://m.vk.com')
+        inverted_css: str = invert(''.join(f_in.readlines()), url_root='https://m.vk.com')
         print(f'{inverted_css.count("}")} rules')
         if not inverted_css:
             continue
@@ -232,8 +237,8 @@ for fn in VK_ME_FILES:
     if not os.path.exists(filename):
         print(f'failed to {fn}.css from vk.me')
         continue
-    with open(filename, 'r') as fin:
-        inverted_css: str = invert(''.join(fin.readlines()), url_root='https://vk.me')
+    with open(filename, 'r') as f_in:
+        inverted_css: str = invert(''.join(f_in.readlines()), url_root='https://vk.me')
         if not inverted_css:
             continue
         # remove properties starting from asterisk unsupported by Stylus add-on
@@ -258,8 +263,8 @@ for path in VK_APPS_FILES:
     if not os.path.exists(filename):
         print(f'failed to get {path} from vk-apps.com')
         continue
-    with open(filename, 'r') as fin:
-        inverted_css: str = invert(''.join(fin.readlines()),
+    with open(filename, 'r') as f_in:
+        inverted_css: str = invert(''.join(f_in.readlines()),
                                    url_root=url_root)
         if not inverted_css:
             continue
@@ -286,8 +291,8 @@ for path in VK_FORMS_FILES:
     if not os.path.exists(filename):
         print(f'failed to get {path} from vkforms.ru')
         continue
-    with open(filename, 'r') as fin:
-        inverted_css: str = invert(''.join(fin.readlines()),
+    with open(filename, 'r') as f_in:
+        inverted_css: str = invert(''.join(f_in.readlines()),
                                    url_root=url_root)
         if not inverted_css:
             continue
@@ -300,18 +305,46 @@ for path in VK_FORMS_FILES:
         out_lines.append(section_css)
         out_lines.append('}\n')
 
-with open('vk_inverted.user.css', 'w') as fout:
-    fout.write('\n'.join(out_lines))
+for path in VK_CONNECT_FILES:
+    fn: str = path.rsplit('/', maxsplit=1)[-1]
+    url_root: str = '/'.join(path.split('/')[:4]) + '/'
+    filename: str = f'connect.{fn.split(".")[0]}.css'
+    if OVERWRITE_FILES and os.path.exists(filename):
+        os.remove(filename)
+    if not os.path.exists(filename):
+        try:
+            urllib.request.urlretrieve(path, filename)
+        except urllib.error.HTTPError:
+            pass
+    if not os.path.exists(filename):
+        print(f'failed to get {path} from connect.vk.com')
+        continue
+    with open(filename, 'r') as f_in:
+        inverted_css: str = invert(''.join(f_in.readlines()),
+                                   url_root=url_root)
+        if not inverted_css:
+            continue
+        # remove properties starting from asterisk unsupported by Stylus add-on
+        inverted_css = '\n'.join(filter(lambda l: not l.strip().startswith('*'), inverted_css.splitlines()))
+        out_lines.append('@-moz-document domain("connect.vk.com") {\n')
+        section_css: str = f'/* auto generated from the {fn}.css ' \
+                           f'of {url_root} */\n' + inverted_css
+        out_dict['sections'].append({'code': section_css, 'domains': ['connect.vk.com']})
+        out_lines.append(section_css)
+        out_lines.append('}\n')
 
-with open('vk_inverted.css', 'w') as fout:
-    fout.write('\n'.join(out_lines[1:]))
+with open('vk_inverted.user.css', 'w') as f_out:
+    f_out.write('\n'.join(out_lines))
+
+with open('vk_inverted.css', 'w') as f_out:
+    f_out.write('\n'.join(out_lines[1:]))
 
 css_md5 = md5('\n'.join(out_lines[1:]))
-with open('vk_inverted.css.json', 'w') as fout:
+with open('vk_inverted.css.json', 'w') as f_out:
     out_dict['originalMd5'] = css_md5
-    json.dump(out_dict, fout, indent='\t')
-with open('vk_inverted.json', 'w') as fout:
+    json.dump(out_dict, f_out, indent='\t')
+with open('vk_inverted.json', 'w') as f_out:
     out_dict['originalMd5'] = css_md5
-    json.dump([out_dict], fout, indent='\t')
-with open('vk_inverted.css.md5', 'w') as fout:
-    fout.write(css_md5)
+    json.dump([out_dict], f_out, indent='\t')
+with open('vk_inverted.css.md5', 'w') as f_out:
+    f_out.write(css_md5)
