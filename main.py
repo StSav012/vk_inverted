@@ -20,6 +20,7 @@ FILES: List[str] = [
     'base',
     'board',
     'bookmarks',
+    'calls',
     'common',
     'datepicker',
     'dev',
@@ -73,6 +74,7 @@ FILES: List[str] = [
     'videocat',
     # 'videoplayer',  # is it needed at all? it's overloaded manually anyway
     'videoview',
+    'vk_connect',
     'wide_dd',
     'widget_post',
     'wiki',
