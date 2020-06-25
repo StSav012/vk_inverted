@@ -20,6 +20,7 @@ FILES: List[str] = [
     'base',
     'board',
     'bookmarks',
+    'boxes',
     'calls',
     'common',
     'datepicker',
@@ -49,6 +50,7 @@ FILES: List[str] = [
     'photos',
     'photos_add',
     'photoview',
+    'places',
     'play_safe_at_home',
     'post',
     'pretty_cards',
@@ -114,7 +116,7 @@ VK_FORMS_FILES: List[str] = [
 
 VK_CONNECT_FILES: List[str] = [
     # https://connect.vk.com/account/
-    'https://connect.vk.com/account/static/bundle.0803443e.css',
+    'https://connect.vk.com/account/static/bundle.b9e10400.css',
 ]
 
 OVERWRITE_FILES: bool = True

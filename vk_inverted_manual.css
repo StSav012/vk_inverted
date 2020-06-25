@@ -261,6 +261,12 @@ div[style="background-image:url(/images/lnkouter.png)"] {
 }
 
 
+/* restore white color for the stories author label */
+.stories_author_name {
+	color: #fff;
+}
+
+
 /* restore default album thumbnail style, with dark shadow */
 .page_album_title, .photos_container_albums .photos_album_title_wrap,
 .photos_container_albums .photos_album_description {
