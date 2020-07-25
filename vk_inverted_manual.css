@@ -86,16 +86,12 @@ input.text.ts_input {
     filter: invert(100%) hue-rotate(180deg);
 }
 
-.page_post_video_play_inline,
-.page_gif_play_icon, .page_gif_progress_icon,
+[dir] .page_post_video_play_inline,
+[dir] .page_gif_play_icon, [dir] .page_gif_progress_icon,
 .video_module .video .page_video_play_icon {
     background-color: #000;
     background-color: rgba(0, 0, 0, .5);
     filter: invert(100%) hue-rotate(180deg);
-}
-
-.page_gif_play_icon:hover, .page_gif_progress_icon:hover {
-    background-color: #00000099;
 }
 
 .page_post_video_play_inline .pr_bt, .page_gif_progress_icon .pr_bt {
@@ -107,7 +103,9 @@ input.text.ts_input {
     background-color: rgba(0, 0, 0, .5);
 }
 
-.video_thumb_play:hover, .page_gif_play_icon:hover, .page_post_video_play_inline:hover {
+.video_thumb_play:hover,
+[dir] .page_gif_play_icon:hover, [dir] .page_gif_progress_icon:hover,
+[dir] .page_post_video_play_inline:hover {
     background-color: rgba(0, 0, 0, .6);
 }
 
