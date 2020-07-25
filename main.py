@@ -103,20 +103,20 @@ VK_ME_FILES: List[str] = [
 VK_APPS_FILES: List[str] = [
     # https://vk.com/covid19
     'https://prod-app7362610-29fb8e8c3f65.pages.vk-apps.com/static/css/5.f639b753.chunk.css',
-    'https://prod-app7362610-29fb8e8c3f65.pages.vk-apps.com/static/css/main.5c3a01c8.chunk.css',
+    'https://prod-app7362610-e494db247753.pages.vk-apps.com/static/css/main.ec198f48.chunk.css',
     # https://vk.com/home
     'https://stayhome.production.vklanding.com/_next/static/css/25b9e58df5e514472871.css',
 ]
 
 VK_FORMS_FILES: List[str] = [
     # https://vk.com/stayhome
-    'https://stayathome.w83.vkforms.ru/app/static/css/5.5f0214b7.chunk.css',
-    'https://stayathome.w83.vkforms.ru/app/static/css/main.03c15dc9.chunk.css',
+    # 'https://stayathome.w83.vkforms.ru/app/static/css/5.5f0214b7.chunk.css',
+    # 'https://stayathome.w83.vkforms.ru/app/static/css/main.03c15dc9.chunk.css',
 ]
 
 VK_CONNECT_FILES: List[str] = [
     # https://connect.vk.com/account/
-    'https://connect.vk.com/account/static/bundle.b9e10400.css',
+    'https://connect.vk.com/account/static/bundle.4b41cc97.css',
 ]
 
 OVERWRITE_FILES: bool = True
