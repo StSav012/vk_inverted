@@ -5,7 +5,7 @@ import os.path
 import time
 import urllib.error
 import urllib.request
-from typing import List, Dict, Any, Final
+from typing import Any, Dict, Final, List
 
 from css_color_inverter import invert
 
@@ -32,6 +32,7 @@ FILES: List[str] = [
     'graffiti_new',
     'groups',
     'im',
+    'ImageStatusPopup',
     'index',
     'join',
     'language',
@@ -102,10 +103,10 @@ VK_ME_FILES: List[str] = [
 
 VK_APPS_FILES: List[str] = [
     # https://vk.com/covid19
-    'https://prod-app7362610-29fb8e8c3f65.pages.vk-apps.com/static/css/5.f639b753.chunk.css',
-    'https://prod-app7362610-e494db247753.pages.vk-apps.com/static/css/main.ec198f48.chunk.css',
+    'https://prod-app7362610-7672be3cfc2f.pages.vk-apps.com/static/css/5.6571cda2.chunk.css',
+    'https://prod-app7362610-7672be3cfc2f.pages.vk-apps.com/static/css/main.9ebbebbb.chunk.css',
     # https://vk.com/home
-    'https://stayhome.production.vklanding.com/_next/static/css/25b9e58df5e514472871.css',
+    # 'https://stayhome.production.vklanding.com/_next/static/css/25b9e58df5e514472871.css',
 ]
 
 VK_FORMS_FILES: List[str] = [
@@ -116,7 +117,7 @@ VK_FORMS_FILES: List[str] = [
 
 VK_CONNECT_FILES: List[str] = [
     # https://connect.vk.com/account/
-    'https://connect.vk.com/account/static/bundle.4b41cc97.css',
+    'https://connect.vk.com/account/static/bundle.70cef62c.css',
 ]
 
 OVERWRITE_FILES: bool = True
