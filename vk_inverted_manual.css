@@ -474,6 +474,12 @@ div.reply_text > div[id][style] {
 }
 
 
+/* [class="ImageStatusPopup"] fix */
+[style="background-color: #FFFFFF;"] {
+    background-color: #000 !important;
+}
+
+
 /* polls text color fix */
 .media_voting_bg_gradient .media_voting_footer, .media_voting_bg_gradient .media_voting_info, .media_voting_bg_photo .media_voting_footer, .media_voting_bg_photo .media_voting_info, .media_voting_bg_tile .media_voting_footer, .media_voting_bg_tile .media_voting_info, .media_voting_bg_gradient .media_voting_footer a, .media_voting_bg_gradient .media_voting_info a, .media_voting_bg_photo .media_voting_footer a, .media_voting_bg_photo .media_voting_info a, .media_voting_bg_tile .media_voting_footer a, .media_voting_bg_tile .media_voting_info a {
 	color: hsla(0, 0%, 100%, .84);
