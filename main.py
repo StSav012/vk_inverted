@@ -12,6 +12,7 @@ from css_color_inverter import invert
 FILES: List[str] = [
     'addresses',
     'ads',
+    'ads_edit',
     'ads_office',
     'aes_light',
     'apps',
@@ -40,6 +41,7 @@ FILES: List[str] = [
     'language',
     'lite',
     'login',
+    'map',
     'market',
     'module',
     'mrtarg',
@@ -64,6 +66,7 @@ FILES: List[str] = [
     'public',
     'reports',
     'restore',
+    'rich_dropdown',
     'search',
     'settings',
     'stories',
