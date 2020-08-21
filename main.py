@@ -11,6 +11,8 @@ from css_color_inverter import invert
 
 FILES: List[str] = [
     'addresses',
+    'ads',
+    'ads_office',
     'aes_light',
     'apps',
     'apps_feed_blocks',
@@ -36,6 +38,7 @@ FILES: List[str] = [
     'index',
     'join',
     'language',
+    'lite',
     'login',
     'market',
     'module',
@@ -64,6 +67,7 @@ FILES: List[str] = [
     'search',
     'settings',
     'stories',
+    'thumbs_edit',
     'tickets',
     'tooltips',
     'top_logo',
@@ -117,7 +121,7 @@ VK_FORMS_FILES: List[str] = [
 
 VK_CONNECT_FILES: List[str] = [
     # https://connect.vk.com/account/
-    'https://connect.vk.com/account/static/bundle.70cef62c.css',
+    'https://connect.vk.com/account/static/bundle.2c83fe1b.css',
 ]
 
 OVERWRITE_FILES: bool = True
